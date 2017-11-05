@@ -1,0 +1,37 @@
+.menu-container {
+  width: 100%;
+  max-height: 0;
+
+  overflow: hidden;
+
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+}
+
+.menu-container.open {
+  max-height: 300px; /* hack. If I ever had more than one dropdown, do transition with JS */
+}
+
+.menu-links {
+  display: none;
+}
+
+.menu-links.open {
+  display: inline-block;
+}
+
+.menu-button {
+  text-align: center;
+  height: 35px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu-button {
+  height: 50px;
+}

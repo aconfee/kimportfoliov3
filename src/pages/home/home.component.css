@@ -1,0 +1,15 @@
+.image-link-row {
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.image-left {
+  margin-right: 10px;
+}
+
+.image-right {
+  margin-left: 10px;
+}

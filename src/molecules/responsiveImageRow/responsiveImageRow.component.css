@@ -1,0 +1,31 @@
+.image-row-container {
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .image-row-container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .spacer {
+    padding: 0 10px;
+  }
+
+  .spacer-left {
+    padding-left: 10px;
+  }
+
+  .spacer-right {
+    padding-right: 10px;
+  }
+}

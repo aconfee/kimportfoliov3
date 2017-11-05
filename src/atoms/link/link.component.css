@@ -1,0 +1,13 @@
+.link {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.link-container {
+  display: inline-block;
+}

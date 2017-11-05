@@ -1,0 +1,17 @@
+.page-content-container {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  /* border: 1px solid silver; */
+}
