@@ -11,7 +11,7 @@ MyLink.propTypes = {
 function MyLink({ url, text }) {
 
   const renderInternalLink = () => {
-    return (<Link to={ url } className="link">{ text }</Link>);
+    return (<Link to={ url } className="link" style={(window.location.pathname === url) ? {color:"#ffd6f4"} : null }>{ text }</Link>);
   };
 
   const renderExternalLink = () => {

@@ -8,7 +8,7 @@ const tempImg = "./images/styleguide-default-image.jpg";
 function Projects() {
   return (
     <div>
-      <Link to="/about">
+      <Link to="/fishbowls">
         { ResponsiveImage({ imageUrl: tempImg }) }
       </Link>
     </div>

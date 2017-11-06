@@ -1,11 +1,12 @@
 .link {
-  color: black;
   text-decoration: none;
   display: inline-block;
+  color: #aeb0b1;
 }
 
 .link:hover {
   cursor: pointer;
+  color: #ffd6f4;
 }
 
 .link-container {

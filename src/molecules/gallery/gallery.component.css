@@ -1,0 +1,8 @@
+.gallery-container {
+
+}
+
+.gallery-container
+.gallery-row {
+  margin: 20px 0; /* 20px matches left and right spacing in responsive image row */
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../templates/responsivePage.component.css';
 import './styleguide.component.css';
-import { DEFAULT_IMAGE } from '../../constants/constants.js';
+import { DEFAULT_IMAGE, DEFAULT_VERTICAL_IMAGE } from '../../constants/constants.js';
 import StyleGuideItem from './styleguideitem.component.js';
 
 // Components
@@ -13,8 +13,26 @@ import LinkGroup from '../../molecules/links/linkGroup.component.js';
 import TextDivider from '../../atoms/divider/textDivider.component.js';
 import DropdownMenu from '../../molecules/dropdownMenu/dropdownMenu.component.js';
 import Header from '../../organisms/header/header.component.js';
+import Gallery from '../../molecules/gallery/gallery.component.js';
+import ButtonRoundText from '../../atoms/button/roundTextButton.component.js';
+import GalleryModal from '../../molecules/gallery/galleryModal.component.js';
 
 class StyleGuide extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = { galleryModalIsOpen: false };
+  };
+
+  handleClick = () => {
+    alert("hey!");
+  };
+
+  handleModalToggle = () => {
+    this.setState( prevState => ({ galleryModalIsOpen: !prevState.galleryModalIsOpen }));
+  };
+
   render() {
     return (
       <div>
@@ -37,7 +55,7 @@ class StyleGuide extends Component {
           itemProps={[
             { name: "imageUrls", isRequired: "required", description: "Array of images to be displayed. Will be displayed as cover image if only one image."}
           ]}>
-          { ResponsiveImageRow({ imageUrls: [ DEFAULT_IMAGE, DEFAULT_IMAGE, DEFAULT_IMAGE ] }) }
+          <ResponsiveImageRow imageUrls={ [ DEFAULT_IMAGE, DEFAULT_IMAGE, DEFAULT_IMAGE ] } />
         </StyleGuideItem>
 
         {/* SITE TITLE */}
@@ -113,6 +131,33 @@ class StyleGuide extends Component {
           title="Header"
           type="organism">
           { Header() }
+        </StyleGuideItem>
+
+        {/* GALLERY */}
+        <StyleGuideItem
+          title="Gallery"
+          type="molecule">
+          <Gallery imageRowUrls={[
+            [DEFAULT_IMAGE],
+            [DEFAULT_IMAGE, DEFAULT_VERTICAL_IMAGE, DEFAULT_IMAGE],
+            [DEFAULT_IMAGE, DEFAULT_IMAGE],
+            [DEFAULT_IMAGE, DEFAULT_IMAGE, DEFAULT_IMAGE, DEFAULT_IMAGE, DEFAULT_IMAGE]
+          ]} />
+        </StyleGuideItem>
+
+        {/* BUTTON - ROUND W/ TEXT */}
+        <StyleGuideItem
+          title="Button - Round with Text"
+          type="atom">
+          <ButtonRoundText text="PREVIOUS" onClick={ this.handleClick }/>
+        </StyleGuideItem>
+
+        {/* GALLERY MODAL */}
+        <StyleGuideItem
+          title="Gallery Modal"
+          type="Molecule">
+          <ButtonRoundText text="OPEN MODAL" onClick={ this.handleModalToggle }/>
+          <GalleryModal imageUrls={[ DEFAULT_IMAGE, DEFAULT_IMAGE, DEFAULT_VERTICAL_IMAGE ]} activeIndex={1} isOpen={ this.state.galleryModalIsOpen } onClose={ this.handleModalToggle }/>
         </StyleGuideItem>
 
       </div>
