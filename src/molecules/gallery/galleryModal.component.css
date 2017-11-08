@@ -36,6 +36,8 @@ img {
 .modal-overlay
 .modal-button {
   border-radius: 100%;
+  width: 50px;
+  height: 50px;
   /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.26); */
 }
 
@@ -44,7 +46,7 @@ img {
 #modal-close-button {
   position: absolute;
   top: 50%;
-  left: 1%;
+  right: 1%;
 
   transform: translateY(-50%);
 }
@@ -56,7 +58,7 @@ img {
   top: 50%;
   right: 1%;
 
-  transform: translateY(-200px);
+  transform: translateY(-100px);
 }
 
 .modal-overlay
@@ -66,5 +68,39 @@ img {
   bottom: 50%;
   right: 1%;
 
-  transform: translateY(200px);
+  transform: translateY(100px);
+}
+
+@media only screen and (min-width: 1000px) {
+  .modal-overlay
+  .modal-button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .modal-overlay
+  .modal-content-container
+  #modal-close-button {
+    left: 1%;
+  }
+
+  .modal-overlay
+  .modal-content-container
+  #modal-next-button {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+
+    transform: translateY(-200px);
+  }
+
+  .modal-overlay
+  .modal-content-container
+  #modal-previous-button {
+    position: absolute;
+    bottom: 50%;
+    right: 1%;
+
+    transform: translateY(200px);
+  }
 }

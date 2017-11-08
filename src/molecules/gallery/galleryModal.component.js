@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import './galleryModal.component.css';
 import ButtonRoundText from '../../atoms/button/roundTextButton.component.js';
 
+const KEYCODE_LEFT = 37;
+const KEYCODE_RIGHT = 39;
+
 class GalleryModal extends Component {
 
   constructor(props){
@@ -12,7 +15,24 @@ class GalleryModal extends Component {
     this.state = {
       activeIndex: activeIndex || 0
     };
-  }
+  };
+
+  componentWillMount = () => {
+    window.addEventListener("keydown", this.handleKeyPress);
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener("keydown", this.handleKeyPress);
+  };
+
+  handleKeyPress = (e) => {
+    const { keyCode } = e;
+
+    if(keyCode !== KEYCODE_LEFT && keyCode !== KEYCODE_RIGHT) return;
+
+    if(keyCode === 39) this.handleNextClick();
+    else if(keyCode === 37) this.handlePreviousClick();
+  };
 
   handleCloseClick = () => {
     this.props.onClose();
@@ -48,7 +68,7 @@ class GalleryModal extends Component {
             <ButtonRoundText text="NEXT" onClick={ this.handleNextClick }/>
           </div>
           <div id="modal-previous-button" className="modal-button">
-            <ButtonRoundText text="PREVIOUS" onClick={ this.handlePreviousClick }/>
+            <ButtonRoundText text={ window.innerWidth > 1000 ? "PREVIOUS" : "PREV" } onClick={ this.handlePreviousClick }/>
           </div>
         </div>
       </div>

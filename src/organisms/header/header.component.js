@@ -4,6 +4,7 @@ import SiteTitle from '../../atoms/siteTitle/siteTitle.component.js';
 import LinkGroup from '../../molecules/links/linkGroup.component.js';
 import TextDivider from '../../atoms/divider/textDivider.component.js';
 import DropdownMenu from '../../molecules/dropdownMenu/dropdownMenu.component.js';
+import Link from '../../atoms/link/link.component.js';
 
 function Header() {
   return (
@@ -13,8 +14,9 @@ function Header() {
       </div>
 
       <div className="link-groups-container">
+      {/* Add dropdown projects -- make dropdown link type. */}
+        <span id="projects-link">{ Link({ url: "/projects", text: "PROJECTS"}) }</span>
         { LinkGroup({ linkData: [
-          { url: "/projects", text: "PROJECTS" },
           { url: "/concept", text: "CONCEPT" },
           { url: "/illustration", text: "ILLUSTRATION" },
           { url: "/fun", text: "FUN!" }

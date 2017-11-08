@@ -16,12 +16,12 @@ function Home() {
       <div className="image-link-row">
         <div className="image-left">
           <Link to="/projects">
-            { ResponsiveImage({ imageUrl: tempImg }) }
+            { ResponsiveImage({ imageUrl: "./images/cover_projects.jpg" }) }
           </Link>
         </div>
         <div className="image-right">
           <Link to="/concept">
-            { ResponsiveImage({ imageUrl: tempImg }) }
+            { ResponsiveImage({ imageUrl: "./images/cover_concept.jpg" }) }
           </Link>
         </div>
       </div>
@@ -29,12 +29,12 @@ function Home() {
       <div className="image-link-row">
         <div className="image-left">
           <Link to="/illustration">
-            { ResponsiveImage({ imageUrl: tempImg }) }
+            { ResponsiveImage({ imageUrl: "./images/cover_illustration.jpg" }) }
           </Link>
         </div>
         <div className="image-right">
           <Link to="/fun">
-            { ResponsiveImage({ imageUrl: tempImg }) }
+            { ResponsiveImage({ imageUrl: "./images/cover_fun.jpg" }) }
           </Link>
         </div>
       </div>
