@@ -16,13 +16,19 @@ import Header from '../../organisms/header/header.component.js';
 import Gallery from '../../molecules/gallery/gallery.component.js';
 import ButtonRoundText from '../../atoms/button/roundTextButton.component.js';
 import GalleryModal from '../../molecules/gallery/galleryModal.component.js';
+import InputBox from '../../atoms/input/inputBox.component.js';
+import TextArea from '../../atoms/input/textArea.component.js';
 
 class StyleGuide extends Component {
 
   constructor(props) {
     super(props);
 
-    this.state = { galleryModalIsOpen: false };
+    this.state = {
+      galleryModalIsOpen: false,
+      inputBoxValue: "",
+      textAreaValue: ""
+    };
   };
 
   handleClick = () => {
@@ -31,6 +37,14 @@ class StyleGuide extends Component {
 
   handleModalToggle = () => {
     this.setState( prevState => ({ galleryModalIsOpen: !prevState.galleryModalIsOpen }));
+  };
+
+  onInputBoxChange = (value) => {
+    this.setState({ inputBoxValue: value });
+  };
+
+  onTextAreaChange = (value) => {
+    this.setState({ textAreaValue: value });
   };
 
   render() {
@@ -158,6 +172,40 @@ class StyleGuide extends Component {
           type="Molecule">
           <ButtonRoundText text="OPEN MODAL" onClick={ this.handleModalToggle }/>
           <GalleryModal imageUrls={[ DEFAULT_IMAGE, DEFAULT_IMAGE, DEFAULT_VERTICAL_IMAGE ]} activeIndex={1} isOpen={ this.state.galleryModalIsOpen } onClose={ this.handleModalToggle }/>
+        </StyleGuideItem>
+
+        {/* INPUT BOX */}
+        <StyleGuideItem
+          title="Input Box"
+          type="Atom">
+          <InputBox
+            type="text"
+            name="Example"
+            placeholder="Placeholder"
+            onChange={ this.onInputBoxChange }
+            error={ false }
+          />
+          <p>{ this.state.inputBoxValue }</p>
+          <InputBox
+            type="text"
+            name="Example"
+            placeholder="Error"
+            onChange={ this.onInputBoxChange }
+            error={ true }
+          />
+        </StyleGuideItem>
+
+        {/* TextArea */}
+        <StyleGuideItem
+          title="Text Area"
+          type="Atom">
+          <TextArea
+            name="Example"
+            placeholder="Placeholder"
+            onChange={ this.onTextAreaChange }
+            error={ false }
+          />
+          <p>{ this.state.textAreaValue }</p>
         </StyleGuideItem>
 
       </div>

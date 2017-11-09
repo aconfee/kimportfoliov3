@@ -18,14 +18,14 @@ class DropdownMenu extends Component {
     const { linkData } = this.props;
 
     return (
-      <div>
+      <div onClick={ this.toggleOpen }>
         <div className={ "menu-container " + (isOpen ? "open" : "") }>
             { LinkGroup({
               linkData,
               orientation: "vertical"
             })}
         </div>
-        <p onClick={ this.toggleOpen } className="menu-button">MENU</p>
+        <p className="menu-button">MENU</p>
       </div>
     );
   };

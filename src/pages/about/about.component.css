@@ -1,4 +1,4 @@
-.about-container {
+.section-container {
   display: -webkit-flex;
   display: flex;
 
@@ -14,35 +14,80 @@
   max-width: 100%;
 }
 
-.self-portrait {
+.testimony-container {
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-align-items: center;
+  align-items: center;
+
+  max-width: 100%;
+
+  margin: 50px 0;
+}
+
+.portrait {
   width: 50%;
   height: 50%;
   border-radius: 100%;
-  margin-left: 0;
-  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.testimony-portrait {
+  width: 25%;
+  height: 25%;
+  border-radius: 100%;
+  margin-bottom: 50px;
+}
+
+.testimony-portrait.left {
+  margin-right: 0;
 }
 
 @media only screen and (min-width: 1000px) {
-  .about-container {
+  .testimony-container {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 
-  .self-portrait {
-    width: 30%;
-    height: 30%;
-    margin-left: 50px;
+  .portrait {
+    width: 40%;
+    height: 40%;
     margin-top: 0;
+  }
+
+  .testimony-portrait {
+    width: 15%;
+    height: 15%;
+    margin-top: 0;
+  }
+
+  .testimony-portrait.left {
+    margin-right: 50px;
   }
 }
 
-.about-description {
+.about-font {
   font-size: 16px;
-  font-weight: 300;
   letter-spacing: 2px;
   color: #4e4e4e;
   margin: 0;
   line-height: 25px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 300;
 }
 
 .about-description-header {
@@ -53,4 +98,11 @@
 
   margin: 0;
   margin-bottom: 30px;
+}
+
+.about-subtitle {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #aeb0b1;
 }

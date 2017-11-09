@@ -1,0 +1,29 @@
+.text-area
+textarea {
+  width: 100%;
+  height: 180px;
+  border: 1px solid #95989a;
+  background-color: #f2efef;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #656565;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline: none;
+}
+
+.text-area
+textarea:focus {
+  background-color: white;
+  border: 1px solid #95989a;
+  outline: none;
+}
+
+.text-area
+.input-error {
+  border: 1px solid red !important;
+}

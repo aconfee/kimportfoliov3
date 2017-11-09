@@ -1,0 +1,29 @@
+.input-box
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #95989a;
+  background-color: #f2efef;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #656565;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline: none;
+}
+
+.input-box
+input:focus {
+  background-color: white;
+  border: 1px solid #95989a;
+  outline: none;
+}
+
+.input-box
+.input-error {
+  border: 1px solid red !important;
+}
