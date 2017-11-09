@@ -24,7 +24,7 @@ function Header() {
         { TextDivider() }
         { LinkGroup({ linkData: [
           { url: "/about", text: "ABOUT" },
-          { url: "", text: "RESUME" },
+          { url: "https://goo.gl/vCakvw", text: "RESUME" },
           { url: "/contact", text: "CONTACT" }
         ]})}
       </div>
@@ -36,7 +36,7 @@ function Header() {
           { url: "/illustration", text: "ILLUSTRATION" },
           { url: "/fun", text: "FUN!" },
           { url: "/about", text: "ABOUT" },
-          { url: "/resume", text: "RESUME" },
+          { url: "https://goo.gl/vCakvw", text: "RESUME" },
           { url: "/contact", text: "CONTACT" }
         ]} />
       </div>
