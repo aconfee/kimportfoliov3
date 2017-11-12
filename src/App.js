@@ -18,18 +18,19 @@ import StyleGuide from './pages/styleguide/styleguide.component.js';
 class App extends Component {
   render() {
     return (
-      <div className="page-content-container">
-        { Header() }
-        <Route exact path="/" component={ Home } />
-        <Route exact path="/projects" component={ Projects } />
-        <Route exact path="/fishbowls" component={ Fishbowls } />
-        <Route path="/concept" component={ Concept } />
-        <Route path="/illustration" component={ Illustration } />
-        <Route path="/fun" component={ Fun } />
-        <Route path="/about" component={ About } />
-        <Route path="/contact" component={ Contact } />
-        <Route path="/styleguide" component={ StyleGuide } />
-
+      <div>
+        <div className="page-content-container">
+          { Header() }
+          <Route exact path="/" component={ Home } />
+          <Route exact path="/projects" component={ Projects } />
+          <Route exact path="/fishbowls" component={ Fishbowls } />
+          <Route path="/concept" component={ Concept } />
+          <Route path="/illustration" component={ Illustration } />
+          <Route path="/fun" component={ Fun } />
+          <Route path="/about" component={ About } />
+          <Route path="/contact" component={ Contact } />
+          <Route path="/styleguide" component={ StyleGuide } />
+        </div>
         { Footer() }
       </div>
     );

@@ -18,6 +18,7 @@ import ButtonRoundText from '../../atoms/button/roundTextButton.component.js';
 import GalleryModal from '../../molecules/gallery/galleryModal.component.js';
 import InputBox from '../../atoms/input/inputBox.component.js';
 import TextArea from '../../atoms/input/textArea.component.js';
+import ContactForm from '../../organisms/forms/contactForm.component.js';
 
 class StyleGuide extends Component {
 
@@ -27,7 +28,8 @@ class StyleGuide extends Component {
     this.state = {
       galleryModalIsOpen: false,
       inputBoxValue: "",
-      textAreaValue: ""
+      textAreaValue: "",
+      formInputs: {}
     };
   };
 
@@ -39,12 +41,17 @@ class StyleGuide extends Component {
     this.setState( prevState => ({ galleryModalIsOpen: !prevState.galleryModalIsOpen }));
   };
 
-  onInputBoxChange = (value) => {
+  onInputBoxChange = (name, value) => {
+    console.log("input", name, value);
     this.setState({ inputBoxValue: value });
   };
 
-  onTextAreaChange = (value) => {
+  onTextAreaChange = (name, value) => {
     this.setState({ textAreaValue: value });
+  };
+
+  handleFormSubmit = (value) => {
+    this.setState({ formInputs: value });
   };
 
   render() {
@@ -179,19 +186,19 @@ class StyleGuide extends Component {
           title="Input Box"
           type="Atom">
           <InputBox
+            label="First"
             type="text"
-            name="Example"
-            placeholder="Placeholder"
+            name="First"
             onChange={ this.onInputBoxChange }
             error={ false }
           />
           <p>{ this.state.inputBoxValue }</p>
           <InputBox
+            label="Last"
             type="text"
-            name="Example"
-            placeholder="Error"
+            name="Last"
             onChange={ this.onInputBoxChange }
-            error={ true }
+            error={ "Please provide a valid last name." }
           />
         </StyleGuideItem>
 
@@ -200,12 +207,20 @@ class StyleGuide extends Component {
           title="Text Area"
           type="Atom">
           <TextArea
+            label="Message"
             name="Example"
-            placeholder="Placeholder"
             onChange={ this.onTextAreaChange }
             error={ false }
           />
           <p>{ this.state.textAreaValue }</p>
+        </StyleGuideItem>
+
+        {/* ContactForm */}
+        <StyleGuideItem
+          title="Text Area"
+          type="Atom">
+          <ContactForm onSubmit={ this.handleFormSubmit }/>
+          { this.state.formInputs.first }
         </StyleGuideItem>
 
       </div>

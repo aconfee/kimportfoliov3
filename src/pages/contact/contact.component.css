@@ -1,0 +1,32 @@
+.contact-page-form-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .contact-page-form-container {
+    width: 75%;
+  }
+}
+
+.header {
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: 200;
+  color: #95989a;
+  margin: 0;
+  margin-bottom: 5px;
+
+  /* TODO: Temp until image */
+  margin-top: 100px;
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #95989a;
+  margin: 0;
+  margin-bottom: 30px;
+}

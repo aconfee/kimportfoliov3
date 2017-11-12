@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 var bodyParser = require('body-parser');
 const normalizePort = require('normalize-port');
-//var apiRoutes = require('./api/routes/index');
+var apiRoutes = require('./api/routes/index');
 
 const app = express();
 
@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // Routes
-//app.use("/api", apiRoutes);
+app.use("/api", apiRoutes);
 app.use(express.static(path.join(__dirname, 'build')));
 app.use('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));

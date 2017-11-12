@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './textArea.component.css';
 
+const MOBILE_WIDTH = 500;
+
 class TextArea extends Component {
   constructor(props) {
     super(props);
@@ -9,30 +11,36 @@ class TextArea extends Component {
     this.state = { value: "" };
   };
 
-  getPlaceholder = () => {
-    return this.isMobile() ? "" : this.props.placeholder;
+  mobileLabel = () => {
+    return this.isMobile() ? this.props.label : "";
+  }
+
+  desktopLabel = () => {
+    return this.isMobile() ? null : ( <label>{ this.props.label }</label> );
   }
 
   isMobile = () => {
-    return window.innerWidth < 1000;
+    return window.innerWidth < MOBILE_WIDTH;
   };
 
   handleChange = (event) => {
-    const value = event.target.value;
+    const { name, value } = event.target;
     this.setState({ value });
-    this.props.onChange(value);
+    this.props.onChange(name, value);
   };
 
   render() {
     return (
       <div className="text-area">
+        { this.desktopLabel() }
         <textarea
           className={ this.props.error ? "input-error" : "" }
           value={ this.state.value }
-          name={ this.props.name } 
-          placeholder={ this.getPlaceholder() }
+          name={ this.props.name }
+          placeholder={ this.mobileLabel() }
           onChange={ this.handleChange }
         ></textarea>
+        <p className="error-message">{ this.props.error }</p>
       </div>
     );
   };
@@ -40,9 +48,9 @@ class TextArea extends Component {
 
 TextArea.propTypes = {
   name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  error: PropTypes.bool.isRequired
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]).isRequired,
+  label: PropTypes.string.isRequired
 };
 
 export default TextArea;

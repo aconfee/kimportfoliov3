@@ -1,0 +1,7 @@
+runtime: nodejs
+env: flex
+env_variables:
+  SMTP_ACCESS_TOKEN: ''
+  SMTP_CLIENT_ID: ''
+  SMTP_CLIENT_SECRET: ''
+  SMTP_REFRESH_TOKEN: ''

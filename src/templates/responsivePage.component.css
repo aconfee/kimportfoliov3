@@ -1,5 +1,6 @@
 .page-content-container {
   max-width: 1200px;
+  min-height: 80vh; /* good enough sticky footer for now */
   position: relative;
   margin: 0 auto;
   padding: 0 30px;
@@ -10,8 +11,5 @@
   -webkit-flex-direction: column;
   flex-direction: column;
 
-  -webkit-justify-content: center;
-  justify-content: center;
-
-  /* border: 1px solid silver; */
+  /*border: 1px solid silver;*/
 }

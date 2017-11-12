@@ -29,6 +29,10 @@
 }
 */
 
+html, body {
+  height: 100%;
+}
+
 .font-light {
   color: #aeb0b1;
 }
