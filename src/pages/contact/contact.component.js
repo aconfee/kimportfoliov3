@@ -7,6 +7,9 @@ function Contact() {
   return (
     <div>
       <div className="contact-page-form-container">
+        <div className="contact-image">
+          <img src="./images/email-sent.png" />
+        </div>
         <p className="header">Contact</p>
         <p className="subtitle">Have any questions or comments? Don&#39;t hesitate to reach out!</p>
         <ContactForm />

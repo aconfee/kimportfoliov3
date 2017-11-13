@@ -3,10 +3,17 @@
   max-width: 100%;
 
   text-align: center;
+
+  transition: 1s;
+  opacity: 0;
 }
 
 .responsive-image.is-clickable:hover {
   cursor: pointer;
+}
+
+.responsive-image.fadeIn {
+  opacity: 1;
 }
 
 .responsive-image

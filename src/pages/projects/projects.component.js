@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div>
       <Link to="/fishbowls">
-        { ResponsiveImage({ imageUrl: tempImg }) }
+        <ResponsiveImage imageUrl={ tempImg } />
       </Link>
     </div>
   );

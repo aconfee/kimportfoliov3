@@ -5,6 +5,7 @@ import './contactForm.component.css';
 import axios from 'axios';
 import InputBox from '../../atoms/input/inputBox.component.js';
 import TextArea from '../../atoms/input/textArea.component.js';
+import HeartBox from '../heartbox/heartbox.component.js';
 
 class ContactForm extends Component {
 
@@ -84,7 +85,12 @@ class ContactForm extends Component {
     classNames += this.state.isSent ? " sent" : "";
 
     // Don't use 'value'. Make another object that better allows me to add variable html.
-    return (<input className={"submit-button" + classNames} type="submit" value="&hearts;" />);
+    return (
+      <div className={ "submit-button" + classNames }>
+        { this.state.isSending ? <HeartBox repeat={ true } /> : null }
+        { !this.state.isSending ? <input type="submit" value="&hearts;" /> : null }
+      </div>
+    );
   };
 
   render() {
@@ -93,22 +99,22 @@ class ContactForm extends Component {
         <form onSubmit={ this.handleSubmit }>
           <div className="input-row">
             <div className="input-row-item">
-              <InputBox label="First *" type="text" name="first" onChange={ this.handleInputChange } error={ this.state.errors.first || false } />
+              <InputBox label="First *" type="text" name="first" onChange={ this.handleInputChange } error={ this.state.errors.first || false } isDisabled={this.state.isSending || this.state.isSent } />
             </div>
             <div className="input-row-item">
-              <InputBox label="Last" type="text" name="last" onChange={ this.handleInputChange } error={ this.state.errors.last || false } />
+              <InputBox label="Last" type="text" name="last" onChange={ this.handleInputChange } error={ this.state.errors.last || false } isDisabled={this.state.isSending || this.state.isSent } />
             </div>
           </div>
           <div className="input-row">
             <div className="input-row-item">
-              <InputBox label="Email *" type="text" name="email" onChange={ this.handleInputChange } error={ this.state.errors.email || false } />
+              <InputBox label="Email *" type="text" name="email" onChange={ this.handleInputChange } error={ this.state.errors.email || false } isDisabled={this.state.isSending || this.state.isSent } />
             </div>
             <div className="input-row-item">
-              <InputBox label="What is 2 + 3? *" type="text" name="captcha" onChange={ this.handleInputChange } error={ this.state.errors.captcha || false } />
+              <InputBox label="What is 2 + 3? *" type="text" name="captcha" onChange={ this.handleInputChange } error={ this.state.errors.captcha || false } isDisabled={this.state.isSending || this.state.isSent } />
             </div>
           </div>
           <div className="item">
-            <TextArea label="Message *" name="message" onChange={ this.handleInputChange } error={ this.state.errors.message || false } />
+            <TextArea label="Message *" name="message" onChange={ this.handleInputChange } error={ this.state.errors.message || false } isDisabled={this.state.isSending || this.state.isSent } />
           </div>
           { this.renderSubmitButton() }
           <span className="error">{ this.state.errors.response }</span>

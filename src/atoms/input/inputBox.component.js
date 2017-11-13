@@ -40,6 +40,7 @@ class InputBox extends Component {
           name={ this.props.name }
           placeholder={ this.mobileLabel() }
           onChange={ this.handleChange }
+          disabled={ this.props.isDisabled }
         />
         <p className="error-message">{ this.props.error }</p>
       </div>
@@ -52,7 +53,8 @@ InputBox.propTypes = {
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]).isRequired,
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  isDisabled: PropTypes.bool
 };
 
 export default InputBox;

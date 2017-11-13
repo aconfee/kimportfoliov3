@@ -17,9 +17,6 @@
   color: #95989a;
   margin: 0;
   margin-bottom: 5px;
-
-  /* TODO: Temp until image */
-  margin-top: 100px;
 }
 
 .subtitle {
@@ -29,4 +26,19 @@
   color: #95989a;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.contact-image {
+  text-align: center;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 800px) {
+  .contact-image {
+    margin-bottom: -131px;
+    margin-left: 563px;
+    margin-top: 100px;
+  }
 }

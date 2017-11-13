@@ -19,6 +19,8 @@ import GalleryModal from '../../molecules/gallery/galleryModal.component.js';
 import InputBox from '../../atoms/input/inputBox.component.js';
 import TextArea from '../../atoms/input/textArea.component.js';
 import ContactForm from '../../organisms/forms/contactForm.component.js';
+import HeartBox from '../../organisms/heartbox/heartbox.component.js';
+import Tilt from '../../molecules/tilt/tilt.component.js';
 
 class StyleGuide extends Component {
 
@@ -66,7 +68,7 @@ class StyleGuide extends Component {
           itemProps={[
             { name: "imageUrl", isRequired: "required", description: "Image to be displayed."}
           ]}>
-          { ResponsiveImage({ imageUrl: DEFAULT_IMAGE }) }
+          <ResponsiveImage imageUrl={ DEFAULT_IMAGE } />
         </StyleGuideItem>
 
         {/* RESPONSIVE IMAGE ROW */}
@@ -221,6 +223,22 @@ class StyleGuide extends Component {
           type="Atom">
           <ContactForm onSubmit={ this.handleFormSubmit }/>
           { this.state.formInputs.first }
+        </StyleGuideItem>
+
+        {/* Heart box */}
+        <StyleGuideItem
+          title="Heart Box"
+          type="Organism">
+          <HeartBox repeat={ true } />
+        </StyleGuideItem>
+
+        {/* Tilter */}
+        <StyleGuideItem
+          title="Tilt"
+          type="Molecule">
+          <Tilt maxTiltX={5} maxTiltY={5}>
+            <div style={{ width:'500px', height:'300px', backgroundColor:'blue', display:'inline-block' }}></div>
+          </Tilt>
         </StyleGuideItem>
 
       </div>

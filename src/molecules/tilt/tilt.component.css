@@ -1,0 +1,6 @@
+.tilt {
+  -webkit-transition: transform 0.5s cubic-bezier(0, 0.55, 0.75, 1);
+  transition: transform 0.5s cubic-bezier(0, 0.55, 0.75, 1);
+
+  display: inline-block;
+}

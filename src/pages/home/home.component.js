@@ -2,6 +2,8 @@ import React from 'react';
 import './home.component.css';
 import ResponsiveImage from '../../atoms/responsiveImage/responsiveImage.component.js';
 import { Link } from 'react-router-dom';
+import ContactForm from '../../organisms/forms/contactForm.component.js';
+import Tilt from '../../molecules/tilt/tilt.component.js';
 
 const tempImg = "./images/styleguide-default-image.jpg";
 
@@ -10,33 +12,49 @@ function Home() {
     <div>
       { /* Using a single image instead of just the row because this will be replaced by another component with
        parallaxing later. */ }
-      { ResponsiveImage({ imageUrl: tempImg }) }
+      <ResponsiveImage imageUrl={ tempImg } />
       <br />
       <br />
       <div className="image-link-row">
-        <div className="image-left">
-          <Link to="/projects">
-            { ResponsiveImage({ imageUrl: "./images/cover_projects.jpg" }) }
-          </Link>
-        </div>
-        <div className="image-right">
-          <Link to="/concept">
-            { ResponsiveImage({ imageUrl: "./images/cover_concept.jpg" }) }
-          </Link>
-        </div>
+        <Tilt maxTiltX={5} maxTiltY={5}>
+          <div className="image-left">
+            <Link to="/projects">
+              <ResponsiveImage imageUrl="./images/cover_projects.jpg" />
+            </Link>
+          </div>
+        </Tilt>
+        <Tilt maxTiltX={5} maxTiltY={5}>
+          <div className="image-right">
+            <Link to="/concept">
+              <ResponsiveImage imageUrl="./images/cover_concept.jpg" />
+            </Link>
+          </div>
+        </Tilt>
       </div>
       <br />
       <div className="image-link-row">
-        <div className="image-left">
-          <Link to="/illustration">
-            { ResponsiveImage({ imageUrl: "./images/cover_illustration.jpg" }) }
-          </Link>
+        <Tilt maxTiltX={5} maxTiltY={5}>
+          <div className="image-left">
+            <Link to="/illustration">
+              <ResponsiveImage imageUrl="./images/cover_illustration.jpg" />
+            </Link>
+          </div>
+        </Tilt>
+        <Tilt maxTiltX={5} maxTiltY={5}>
+          <div className="image-right">
+            <Link to="/fun">
+              <ResponsiveImage imageUrl="./images/cover_fun.jpg" />
+            </Link>
+          </div>
+        </Tilt>
+      </div>
+      <div className="contact-page-form-container">
+        <div className="contact-image">
+          <img src="./images/email-sent.png" />
         </div>
-        <div className="image-right">
-          <Link to="/fun">
-            { ResponsiveImage({ imageUrl: "./images/cover_fun.jpg" }) }
-          </Link>
-        </div>
+        <p className="header">Contact</p>
+        <p className="subtitle">Have any questions or comments? Don&#39;t hesitate to reach out!</p>
+        <ContactForm />
       </div>
     </div>
   );
