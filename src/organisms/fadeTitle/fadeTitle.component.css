@@ -1,0 +1,15 @@
+.title-thing .stuff {
+  transition: 2s;
+  position: relative;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.animate {
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+.still {
+  opacity: 0;
+}

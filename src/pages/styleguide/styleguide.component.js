@@ -21,6 +21,7 @@ import TextArea from '../../atoms/input/textArea.component.js';
 import ContactForm from '../../organisms/forms/contactForm.component.js';
 import HeartBox from '../../organisms/heartbox/heartbox.component.js';
 import Tilt from '../../molecules/tilt/tilt.component.js';
+import FadeTitle from '../../organisms/fadeTitle/fadeTitle.component.js';
 
 class StyleGuide extends Component {
 
@@ -239,6 +240,13 @@ class StyleGuide extends Component {
           <Tilt maxTiltX={5} maxTiltY={5}>
             <div style={{ width:'500px', height:'300px', backgroundColor:'blue', display:'inline-block' }}></div>
           </Tilt>
+        </StyleGuideItem>
+
+        {/* Fade Title */}
+        <StyleGuideItem
+          title="Fade Title"
+          type="Organism">
+          <FadeTitle />
         </StyleGuideItem>
 
       </div>

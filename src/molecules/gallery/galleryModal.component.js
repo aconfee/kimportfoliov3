@@ -13,7 +13,8 @@ class GalleryModal extends Component {
     const { activeIndex } = this.props;
 
     this.state = {
-      activeIndex: activeIndex || 0
+      activeIndex: activeIndex || 0,
+      animateClass: ""
     };
   };
 
@@ -41,13 +42,37 @@ class GalleryModal extends Component {
   handleNextClick = () => {
     const { activeIndex } = this.state;
     const nextIndex = activeIndex === this.props.imageUrls.length - 1 ? 0 : activeIndex + 1;
-    this.setState({ activeIndex: nextIndex });
+
+    let img = new Image();
+    img.src = this.props.imageUrls[nextIndex];
+    img.onload = function() {
+      setTimeout(function() {
+        this.setState({ animateClass: "animate-end" });
+      }.bind(this), 100);
+    }.bind(this);
+
+    this.setState({
+      activeIndex: nextIndex,
+      animateClass: "animate-start-next"
+    });
   };
 
   handlePreviousClick = () => {
     const { activeIndex } = this.state;
     const nextIndex = activeIndex === 0 ? this.props.imageUrls.length - 1 : activeIndex - 1;
-    this.setState({ activeIndex: nextIndex });
+
+    let img = new Image();
+    img.src = this.props.imageUrls[nextIndex];
+    img.onload = function() {
+      setTimeout(function() {
+        this.setState({ animateClass: "animate-end" });
+      }.bind(this), 100);
+    }.bind(this);
+
+    this.setState({
+      activeIndex: nextIndex,
+      animateClass: "animate-start-previous"
+    });
   };
 
   render() {
@@ -60,7 +85,7 @@ class GalleryModal extends Component {
     return (
       <div className="modal-overlay">
         <div className="modal-content-container">
-          <img src={ imageUrls[activeIndex] } alt="Kim Greenough art." title="Kim Greenough art." />
+          <img className={ this.state.animateClass } src={ imageUrls[activeIndex] } alt="Kim Greenough art." title="Kim Greenough art." />
           <div id="modal-close-button" className="modal-button">
             <ButtonRoundText text="CLOSE" onClick={ this.handleCloseClick }/>
           </div>

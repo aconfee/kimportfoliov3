@@ -104,3 +104,21 @@ img {
     transform: translateY(200px);
   }
 }
+
+.animate-start-next {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: none;
+}
+
+.animate-start-previous {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: none;
+}
+
+.animate-end {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.5s;
+}
