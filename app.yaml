@@ -1,11 +1,11 @@
 runtime: nodejs
 env: flex
-manual_scaling:
-  instances: 1
+
 resources:
-  cpu: 2
-  memory_gb: 4
+  cpu: 1
+  memory_gb: 0.5
   disk_size_gb: 10
+
 env_variables:
   SMTP_ACCESS_TOKEN: 'ya29.GlumBNRhd3YC6V6K3dSkKiSwwR2bVXTcR0j8maES4tmNCSyWhmAq3T64NSFAHnVzPFFm3Z667PvTfKQ1qYjL8wlEzb90IeC4bO1e6_ut_xUbnxDI9ZTZI8ZS1-sm'
   SMTP_CLIENT_ID: '560375925539-ur6tu6l4700n8oj2ajeut5quol373hcn.apps.googleusercontent.com'
