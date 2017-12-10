@@ -15,7 +15,9 @@ function Fishbowls() {
       [PATH + "gobie_8.png"],
       [PATH + "gobie_9.png"],
       [PATH + "gobie_10.png"],
-      [PATH + "gobie_11.png", PATH + "gobie_12.png", PATH + "gobie_13.png"],
+      [PATH + "gobie_11.png"],
+      [PATH + "gobie_12.png"],
+      [PATH + "gobie_13.png"],
       [PATH + "gobie_15.png"],
       [PATH + "gobie_16.png"],
     ]} />

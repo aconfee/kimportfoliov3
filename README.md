@@ -6,7 +6,8 @@ npm run build
 node server.js
 
 deploy:
-gcloud app deploy 
+git add and commit yada yada
+eb deploy 
 
 
 

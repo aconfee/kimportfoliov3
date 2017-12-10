@@ -3,14 +3,13 @@ import '../home/home.component.css';
 import ResponsiveImage from '../../atoms/responsiveImage/responsiveImage.component.js';
 import { Link } from 'react-router-dom';
 
-const tempImg = "./images/styleguide-default-image.jpg";
-
 function Projects() {
   return (
     <div>
       <Link to="/fishbowls">
-        <ResponsiveImage imageUrl={ tempImg } />
+        <ResponsiveImage imageUrl="./images/projects/fishbowls/project_cover_fishbowls.png" />
       </Link>
+      <ResponsiveImage imageUrl="./images/projects/project_cover_comingsoon.jpg" />
     </div>
   );
 };
