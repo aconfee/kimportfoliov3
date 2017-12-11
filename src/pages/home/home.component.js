@@ -4,6 +4,7 @@ import ResponsiveImage from '../../atoms/responsiveImage/responsiveImage.compone
 import { Link } from 'react-router-dom';
 import ContactForm from '../../organisms/forms/contactForm.component.js';
 import Tilt from '../../molecules/tilt/tilt.component.js';
+import InstagramFeed from '../../molecules/instagramFeed/instagramFeed.component.js';
 
 function Home() {
   return (
@@ -48,11 +49,14 @@ function Home() {
       </div>
       <div className="contact-page-form-container">
         <div className="contact-image">
-          <img src="./images/email-sent.png" />
+          <img src="./images/email-sent.png" title="Email sent cute otter." alt="Email sent cute otter."/>
         </div>
         <p className="header">Contact</p>
         <p className="subtitle">Have any questions or comments? Don&#39;t hesitate to reach out!</p>
         <ContactForm />
+      </div>
+      <div className="instagram-feed-container">
+        <InstagramFeed />
       </div>
     </div>
   );

@@ -27,6 +27,10 @@ class ResponsiveImageRow extends Component {
         break;
       case imageUrls.length - 1:
         spacerClass = "spacer-left";
+        break;
+      default:
+        console.error("Invalid execution path.");
+        break;
     };
 
     return spacerClass;

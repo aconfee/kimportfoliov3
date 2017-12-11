@@ -1,5 +1,6 @@
 'use strict';
 const nodemailer = require('nodemailer');
+const axios = require('axios');
 
 const smtpClientId = process.env.SMTP_CLIENT_ID;
 if(!smtpClientId) {
@@ -19,6 +20,11 @@ if(!smtpRefreshToken) {
 const smtpAccessToken = process.env.SMTP_ACCESS_TOKEN;
 if(!smtpAccessToken) {
   console.error("Please set environment variable SMTP_ACCESS_TOKEN for email messenger.");
+}
+
+const INSTAGRAM_ACCESS_TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
+if(!INSTAGRAM_ACCESS_TOKEN) {
+  console.error("Please set environment variable INSTAGRAM_ACCESS_TOKEN for instagram feed.");
 }
 
 let transporter = nodemailer.createTransport({
@@ -77,3 +83,32 @@ module.exports.sendMessage = function(req, res) {
       res.json({ messageId: info.messageId, response: info.response });
   });
 }
+
+module.exports.instagramFeed = function(req, res) {
+  console.log("getting instagram feed");
+
+  // TODO: When app is reviewed by instagram and client is in Live Mode instead of Sandbox Mode, I will getting
+  // a 'pagination' property returned with this request which I can used (next_url) to get more than 20 images.
+  const count = 20;
+  const url = `https://api.instagram.com/v1/users/1381993170/media/recent/?access_token=${INSTAGRAM_ACCESS_TOKEN}&count=${count}`;
+
+  axios.get(url).then(response => {
+    console.log("got feed");
+    console.log(response.data);
+
+    const images = response.data.data.map(feedItem => {
+      return feedItem.images.low_resolution.url;
+    });
+
+    res.status(200);
+    res.json({ response: images });
+  })
+  .catch(error => {
+    console.log("error getting feed");
+    console.log(error);
+
+    res.status(500);
+    res.json({ error });
+    return;
+  });
+};

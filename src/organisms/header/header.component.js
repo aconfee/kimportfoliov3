@@ -5,6 +5,7 @@ import LinkGroup from '../../molecules/links/linkGroup.component.js';
 import TextDivider from '../../atoms/divider/textDivider.component.js';
 import DropdownMenu from '../../molecules/dropdownMenu/dropdownMenu.component.js';
 import Link from '../../atoms/link/link.component.js';
+import SocialIconGroup from '../../molecules/socialiconGroup/socialiconGroup.component.js';
 
 function Header() {
   return (
@@ -41,6 +42,9 @@ function Header() {
         ]} />
       </div>
 
+      <div className="socialiconGroup-container">
+        { SocialIconGroup() }
+      </div>
     </div>
   );
 };

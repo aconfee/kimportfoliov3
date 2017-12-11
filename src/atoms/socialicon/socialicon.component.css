@@ -1,0 +1,68 @@
+.social-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url('./social_sprite_sheet.png');
+  background-repeat: no-repeat;
+  background-size: 500% 200%;
+  position: relative;
+}
+
+.social-icon:after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-image: url('./social_sprite_sheet.png');
+  background-repeat: no-repeat;
+  background-size: 500% 200%;
+
+  opacity: 0;
+
+  -webkit-transition: opacity 0.2;
+  transition: opacity 0.2s;
+}
+
+.social-icon:hover:after {
+  cursor:pointer;
+  opacity: 1;
+}
+
+.twitter {
+  background-position: 0 -20px;
+}
+
+.twitter:after {
+  background-position: 0 0;
+}
+
+.linkedin {
+  background-position: -20px -20px;
+}
+
+.linkedin:after {
+  background-position: -20px 0;
+}
+
+.youtube {
+  background-position: -40px -20px;
+}
+
+.youtube:after {
+  background-position: -40px 0;
+}
+
+.facebook {
+  background-position: -60px -20px;
+}
+
+.facebook:after {
+  background-position: -60px 0;
+}
+
+.instagram {
+  background-position: -80px -20px;
+}
+
+.instagram:after {
+  background-position: -80px 0;
+}

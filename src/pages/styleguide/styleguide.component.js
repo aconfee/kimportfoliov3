@@ -22,6 +22,9 @@ import ContactForm from '../../organisms/forms/contactForm.component.js';
 import HeartBox from '../../organisms/heartbox/heartbox.component.js';
 import Tilt from '../../molecules/tilt/tilt.component.js';
 import FadeTitle from '../../organisms/fadeTitle/fadeTitle.component.js';
+import SocialIcon from '../../atoms/socialicon/socialicon.component.js';
+import SocialIconGroup from '../../molecules/socialiconGroup/socialiconGroup.component.js';
+import InstagramFeed from '../../molecules/instagramFeed/instagramFeed.component.js';
 
 class StyleGuide extends Component {
 
@@ -247,6 +250,27 @@ class StyleGuide extends Component {
           title="Fade Title"
           type="Organism">
           <FadeTitle />
+        </StyleGuideItem>
+
+        {/* Social Icon */}
+        <StyleGuideItem
+          title="Social Icon"
+          type="Atom">
+          <SocialIcon iconType="instagram" link="https://www.instagram.com/kimbyarting/" />
+        </StyleGuideItem>
+
+        {/* Social Icon Group */}
+        <StyleGuideItem
+          title="Social Icon Group"
+          type="Atom">
+          <SocialIconGroup />
+        </StyleGuideItem>
+
+        {/* Instagram Feed */}
+        <StyleGuideItem
+          title="Instagram Feed"
+          type="Molecule">
+          <InstagramFeed />
         </StyleGuideItem>
 
       </div>

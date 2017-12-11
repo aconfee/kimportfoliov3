@@ -8,7 +8,7 @@ function Contact() {
     <div>
       <div className="contact-page-form-container">
         <div className="contact-image">
-          <img src="./images/email-sent.png" />
+          <img src="./images/email-sent.png" title="Email sent cute otter." alt="Email sent cute otter."/>
         </div>
         <p className="header">Contact</p>
         <p className="subtitle">Have any questions or comments? Don&#39;t hesitate to reach out!</p>

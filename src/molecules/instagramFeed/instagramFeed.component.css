@@ -1,0 +1,19 @@
+.instagram-feed {
+  text-align: center;
+}
+
+.instagram-image {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.instagram-image img {
+  max-width: 100%;
+}
+
+.instagram-header {
+  width: 300px;
+  height: auto;
+}
