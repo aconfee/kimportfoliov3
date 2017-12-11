@@ -56,7 +56,9 @@ function Home() {
         <ContactForm />
       </div>
       <div className="instagram-feed-container">
-        <InstagramFeed />
+        <a href="https://www.instagram.com/kimbyarting/">
+          <InstagramFeed />
+        </a>
       </div>
     </div>
   );
