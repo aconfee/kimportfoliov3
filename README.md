@@ -7,7 +7,7 @@ node server.js
 
 deploy:
 git add and commit yada yada
-eb deploy 
+eb deploy
 
 
 

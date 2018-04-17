@@ -8,7 +8,9 @@ function Alice() {
     <Gallery imageRowUrls={[
       [PATH + "alice_01.png"],
       [PATH + "alice_02.png"],
-      [PATH + "alice_03.png"]
+      [PATH + "alice_03.png"],
+      [PATH + "madHatter_01.png"],
+      [PATH + "madHatter_02.png"]
     ]} />
   );
 };
