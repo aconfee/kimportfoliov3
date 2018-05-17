@@ -42,7 +42,7 @@ function Home() {
         <Tilt maxTiltX={5} maxTiltY={5}>
           <div className="image-right">
             <a href="https://medium.com/@kimgreenough">
-              <ResponsiveImage imageUrl="./images/cover_concept.png" />
+              <ResponsiveImage imageUrl="./images/cover_blog.png" />
             </a>
           </div>
         </Tilt>
