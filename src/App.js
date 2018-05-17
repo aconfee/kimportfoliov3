@@ -14,6 +14,7 @@ import About from './pages/about/about.component.js';
 import Contact from './pages/contact/contact.component.js';
 import Fishbowls from './pages/projects/fishbowls.component.js';
 import Alice from './pages/projects/alice.component.js';
+import Carcajou from './pages/projects/carcajou.component';
 import Jesse from './pages/projects/jesse.component.js';
 import Lilly from './pages/projects/lilly.component.js';
 import StyleGuide from './pages/styleguide/styleguide.component.js';
@@ -26,6 +27,7 @@ class App extends Component {
           { Header() }
           <Route exact path="/" component={ Home } />
           <Route exact path="/projects" component={ Projects } />
+          <Route exact path="/carcajou" component={ Carcajou } />
           <Route exact path="/fishbowls" component={ Fishbowls } />
           <Route exact path="/alice" component={ Alice } />
           <Route exact path="/jesse" component={ Jesse } />

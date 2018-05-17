@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 function Projects() {
   return (
     <div>
+      <Link to="/carcajou">
+        <ResponsiveImage imageUrl="./images/projects/carcajou/project_cover_carcajou.png" />
+      </Link>
       <Link to="/alice">
         <ResponsiveImage imageUrl="./images/projects/alice/project_cover_alice.png" />
       </Link>

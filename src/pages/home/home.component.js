@@ -15,17 +15,10 @@ function Home() {
       <br />
       <br />
       <div className="image-link-row">
-        <Tilt maxTiltX={5} maxTiltY={5}>
+        <Tilt maxTiltX={1} maxTiltY={1}>
           <div className="image-left">
             <Link to="/projects">
               <ResponsiveImage imageUrl="./images/cover_projects.png" />
-            </Link>
-          </div>
-        </Tilt>
-        <Tilt maxTiltX={5} maxTiltY={5}>
-          <div className="image-right">
-            <Link to="/concept">
-              <ResponsiveImage imageUrl="./images/cover_concept.png" />
             </Link>
           </div>
         </Tilt>
@@ -44,6 +37,13 @@ function Home() {
             <Link to="/fun">
               <ResponsiveImage imageUrl="./images/cover_fun.png" />
             </Link>
+          </div>
+        </Tilt>
+        <Tilt maxTiltX={5} maxTiltY={5}>
+          <div className="image-right">
+            <a href="https://medium.com/@kimgreenough">
+              <ResponsiveImage imageUrl="./images/cover_concept.png" />
+            </a>
           </div>
         </Tilt>
       </div>
