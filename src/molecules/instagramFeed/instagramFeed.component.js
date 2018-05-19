@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './instagramFeed.component.css';
 import axios from 'axios';
 
+const FEED_URL = 'https://lotqcf3jw7.execute-api.us-west-2.amazonaws.com/dev/instagramfeed';
+
 class InstagramFeed extends Component {
 
   constructor(props) {
@@ -11,7 +13,7 @@ class InstagramFeed extends Component {
   }
 
   componentWillMount = () => {
-    axios.get("/api/feed")
+    axios.get(FEED_URL)
       .then(response => {
         console.log("got response");
         console.log(response.data.response);
