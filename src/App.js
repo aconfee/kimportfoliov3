@@ -7,7 +7,6 @@ import { Route } from 'react-router-dom';
 
 import Home from './pages/home/home.component.js';
 import Projects from './pages/projects/projects.component.js';
-import Concept from './pages/concept/concept.component.js';
 import Illustration from './pages/illustration/illustration.component.js';
 import Fun from './pages/fun/fun.component.js';
 import About from './pages/about/about.component.js';
@@ -32,7 +31,6 @@ class App extends Component {
           <Route exact path="/alice" component={ Alice } />
           <Route exact path="/jesse" component={ Jesse } />
           <Route exact path="/lilly" component={ Lilly } />
-          <Route path="/concept" component={ Concept } />
           <Route path="/illustration" component={ Illustration } />
           <Route path="/fun" component={ Fun } />
           <Route path="/about" component={ About } />
