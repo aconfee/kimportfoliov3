@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 
 class Projects extends Component {
 
-  onComponentWillMount = () => {  
+  componentWillMount = () => {  
     window.scrollTo(0, 0);
+    console.log('scrolling to top');
   };
 
   render() {
