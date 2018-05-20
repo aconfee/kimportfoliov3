@@ -15,8 +15,6 @@ class InstagramFeed extends Component {
   componentWillMount = () => {
     axios.get(FEED_URL)
       .then(response => {
-        console.log("got response");
-        console.log(response.data.response);
         this.setState({ imageUrls: response.data.response });
       })
       .catch(error => {
