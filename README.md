@@ -1,3 +1,5 @@
+Server functionality, sendimg messages and getting Instagram feed, is in AWS Lambda functions.
+
 local:
 npm run start
 
