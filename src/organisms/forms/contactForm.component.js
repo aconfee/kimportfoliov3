@@ -7,6 +7,8 @@ import InputBox from '../../atoms/input/inputBox.component.js';
 import TextArea from '../../atoms/input/textArea.component.js';
 import HeartBox from '../heartbox/heartbox.component.js';
 
+const SEND_EMAIL_URL = 'https://0lws18ieng.execute-api.us-west-2.amazonaws.com/dev/contact';
+
 class ContactForm extends Component {
 
   constructor(props) {
@@ -34,7 +36,7 @@ class ContactForm extends Component {
 
     if(this.sanitizeInput()) {
       this.setState({ isSending: true });
-      axios.post("/api/contact", this.inputs)
+      axios.post(SEND_EMAIL_URL, this.inputs)
         .then(response => {
           if(response.status === 200) {
             this.setState({ isSending: false, isSent: true });
