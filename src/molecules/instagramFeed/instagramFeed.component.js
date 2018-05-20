@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './instagramFeed.component.css';
 import axios from 'axios';
 
-const FEED_URL = 'https://lotqcf3jw7.execute-api.us-west-2.amazonaws.com/dev/instagramfeed';
+const FEED_URL = 'https://0lws18ieng.execute-api.us-west-2.amazonaws.com/dev/instagramfeed';
 
 class InstagramFeed extends Component {
 
