@@ -7,7 +7,7 @@ import InputBox from '../../atoms/input/inputBox.component.js';
 import TextArea from '../../atoms/input/textArea.component.js';
 import HeartBox from '../heartbox/heartbox.component.js';
 
-const SEND_EMAIL_URL = 'https://0lws18ieng.execute-api.us-west-2.amazonaws.com/dev/contact';
+const SEND_EMAIL_URL = 'https://iu81vnqiwb.execute-api.us-west-2.amazonaws.com/dev/portfolio/contact';
 
 class ContactForm extends Component {
 
