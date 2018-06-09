@@ -25,7 +25,7 @@ function Header() {
         { LinkGroup({ linkData: [
           { url: "https://medium.com/@kimgreenough", text: "BLOG" },
           { url: "/about", text: "ABOUT" },
-          { url: "https://goo.gl/vCakvw", text: "RESUME" },
+          { url: "https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ", text: "RESUME" },
           { url: "/contact", text: "CONTACT" }
         ]})}
       </div>
@@ -37,7 +37,7 @@ function Header() {
           { url: "/fun", text: "FUN!" },
           { url: "https://medium.com/@kimgreenough", text: "BLOG" },
           { url: "/about", text: "ABOUT" },
-          { url: "https://goo.gl/vCakvw", text: "RESUME" },
+          { url: "https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ", text: "RESUME" },
           { url: "/contact", text: "CONTACT" }
         ]} />
       </div>
