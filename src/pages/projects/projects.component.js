@@ -25,9 +25,9 @@ class Projects extends Component {
         <Link to="/fishbowls">
           <ResponsiveImage imageUrl="./images/projects/fishbowls/project_cover_fishbowls.png" />
         </Link>
-        <Link to="/jesse">
+        {/* <Link to="/jesse">
           <ResponsiveImage imageUrl="./images/projects/jesse/project_cover_jesse.png" />
-        </Link>
+        </Link> */}
         <Link to="/lilly">
           <ResponsiveImage imageUrl="./images/projects/lilly/project_cover_lilly.png" />
         </Link>
