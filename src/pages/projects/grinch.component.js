@@ -14,7 +14,8 @@ class Grinch extends Component {
     return (
       <Gallery imageRowUrls={[
         [PATH + "01_grinch.png"],
-        [PATH + "02_grinch.png"]
+        [PATH + "02_grinch.png"],
+        [PATH + "03_grinch.png"]
       ]} />
     );
   };
