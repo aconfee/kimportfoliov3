@@ -2,7 +2,7 @@
   width: 20px;
   height: 20px;
   display: inline-block;
-  background-image: url('./social_sprite_sheet.jpg');
+  background-image: url('./social_sprite_sheet.png');
   background-repeat: no-repeat;
   background-size: 500% 200%;
   position: relative;
@@ -12,7 +12,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background-image: url('./social_sprite_sheet.jpg');
+  background-image: url('./social_sprite_sheet.png');
   background-repeat: no-repeat;
   background-size: 500% 200%;
 
@@ -27,11 +27,11 @@
   opacity: 1;
 }
 
-.twitter {
+.instagram {
   background-position: 0 -20px;
 }
 
-.twitter:after {
+.instagram:after {
   background-position: 0 0;
 }
 
@@ -59,10 +59,10 @@
   background-position: -60px 0;
 }
 
-.instagram {
+.twitter {
   background-position: -80px -20px;
 }
 
-.instagram:after {
+.twitter:after {
   background-position: -80px 0;
 }

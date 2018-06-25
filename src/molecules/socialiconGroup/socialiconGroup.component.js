@@ -8,7 +8,7 @@ function SocialIconGroup() {
     <span className="socialicon-group">
       { SocialIcon({ iconType: "instagram", link: "https://www.instagram.com/kimbyarting/" }) }
       { SocialIcon({ iconType: "linkedin", link: "https://www.linkedin.com/in/kimberly-greenough-089215b9/" }) }
-      { SocialIcon({ iconType: "youtube", link: "https://www.youtube.com/channel/UCOQnA62HnXZe8NaC1D-O72A" }) }
+      { SocialIcon({ iconType: "youtube", link: "https://www.youtube.com/kimbyarting" }) }
       { SocialIcon({ iconType: "facebook", link: "https://www.facebook.com/kimbyarting/" }) }
       { SocialIcon({ iconType: "twitter", link: "https://twitter.com/kimbyarting" }) }
     </span>
