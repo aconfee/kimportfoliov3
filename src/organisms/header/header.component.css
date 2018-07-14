@@ -3,7 +3,8 @@
   height: auto;
   padding-top: 30px;
   margin-bottom: 60px;
-  z-index: 100; /* just in case */
+
+  z-index: 10;
 }
 
 .header-container
