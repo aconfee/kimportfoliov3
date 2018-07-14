@@ -15,10 +15,8 @@ function Header() {
       </div>
 
       <div className="link-groups-container">
-      {/* Add dropdown projects -- make dropdown link type. */}
-        <span id="projects-link">{ Link({ url: "/projects", text: "PROJECTS"}) }</span>
+        <span id="projects-link">{ Link({ url: "/", text: "PROJECTS"}) }</span>
         { LinkGroup({ linkData: [
-          { url: "/illustration", text: "ILLUSTRATION" },
           { url: "/fun", text: "FUN!" }
         ]})}
         { TextDivider() }
@@ -32,8 +30,7 @@ function Header() {
 
       <div className="dropdown-menu-container">
         <DropdownMenu linkData={[
-          { url: "/projects", text: "PROJECTS" },
-          { url: "/illustration", text: "ILLUSTRATION" },
+          { url: "/", text: "PROJECTS" },
           { url: "/fun", text: "FUN!" },
           { url: "https://medium.com/@kimgreenough", text: "BLOG" },
           { url: "/about", text: "ABOUT" },

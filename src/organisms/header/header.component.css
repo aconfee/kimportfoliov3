@@ -25,6 +25,11 @@
   display: block;
 }
 
+.socialiconGroup-container {
+  margin: none;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1000px) {
   .header-container
   .link-groups-container {
@@ -47,12 +52,13 @@
     margin-bottom: 0;
     display: inline-block;
   }
+
+  .socialiconGroup-container {
+    margin-left: 3px;
+    text-align: left;
+  }
 }
 
 #projects-link {
   margin-right: 10px;
-}
-
-.socialiconGroup-container {
-  margin-left: 3px;
 }

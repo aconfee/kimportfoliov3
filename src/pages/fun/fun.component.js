@@ -14,8 +14,8 @@ class Fun extends Component {
     return (
       <Gallery imageRowUrls={[
         [PATH + "fun_01.png", PATH + "fun_02.png", PATH + "fun_03.png", PATH + "fun_04.png", PATH + "fun_05.png"],
-        [PATH + "fun_06.png", PATH + "fun_07.png", PATH + "fun_08.png", PATH + "fun_09.png", PATH + "fun_10.png"],
-        [PATH + "fun_11.png"]
+        [PATH + "fun_08.png", PATH + "illustration_03.jpg", PATH + "fun_09.png", PATH + "fun_10.png"],
+        [PATH + "fun_11.png", PATH + "illustration_02.png",  PATH + "fun_06.png", PATH + "illustration_04.png", PATH + "fun_07.png"]
       ]} />
     );
   };
