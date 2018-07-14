@@ -25,6 +25,7 @@ import FadeTitle from '../../organisms/fadeTitle/fadeTitle.component.js';
 import SocialIcon from '../../atoms/socialicon/socialicon.component.js';
 import SocialIconGroup from '../../molecules/socialiconGroup/socialiconGroup.component.js';
 import InstagramFeed from '../../molecules/instagramFeed/instagramFeed.component.js';
+import ProjectsDropdown from '../../molecules/projectsDropdown/projectsDropdown.component';
 
 class StyleGuide extends Component {
 
@@ -157,7 +158,7 @@ class StyleGuide extends Component {
         <StyleGuideItem
           title="Header"
           type="organism">
-          { Header() }
+          <Header />
         </StyleGuideItem>
 
         {/* GALLERY */}
@@ -271,6 +272,13 @@ class StyleGuide extends Component {
           title="Instagram Feed"
           type="Molecule">
           <InstagramFeed />
+        </StyleGuideItem>
+
+        {/* Projects Dropdown */}
+        <StyleGuideItem
+          title="Projects Dropdown"
+          type="Molecule">
+          <ProjectsDropdown />
         </StyleGuideItem>
 
       </div>

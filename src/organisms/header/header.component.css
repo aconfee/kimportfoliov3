@@ -3,6 +3,7 @@
   height: auto;
   padding-top: 30px;
   margin-bottom: 60px;
+  z-index: 100; /* just in case */
 }
 
 .header-container
@@ -61,4 +62,10 @@
 
 #projects-link {
   margin-right: 10px;
+}
+
+.projects-dropdown-container {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -60px;
 }

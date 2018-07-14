@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div>
         <div className="page-content-container">
-          { Header() }
+          <Header />
           <Route exact path="/" component={ Home } />
           <Route exact path="/projects" component={ Home } />
           <Route exact path="/carcajou" component={ Carcajou } />
