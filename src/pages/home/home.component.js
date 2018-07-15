@@ -11,13 +11,13 @@ function Home() {
 
         <div className="image-left">
           <Link to="/grinch">
-            <ResponsiveImage imageUrl="./images/projects/grinch/project_cover_grinch.png" />
+            <ResponsiveImage imageUrl="./images/Grinch_Cover.png" />
           </Link>
         </div>
 
         <div className="image-right">
           <Link to="/carcajou">
-            <ResponsiveImage imageUrl="./images/projects/carcajou/project_cover_carcajou.png" />
+            <ResponsiveImage imageUrl="./images/Carcajou_Cover.png" />
           </Link>
         </div>
         
@@ -26,12 +26,12 @@ function Home() {
       <div className="image-link-row">
         <div className="image-left">
           <Link to="/fishbowls">
-            <ResponsiveImage imageUrl="./images/projects/fishbowls/project_cover_fishbowls.png" />
+            <ResponsiveImage imageUrl="./images/Gobie_Cover.png" />
           </Link>
         </div>
         <div className="image-right">
           <Link to="/fun">
-            <ResponsiveImage imageUrl="./images/cover_fun.png" />
+            <ResponsiveImage imageUrl="./images/Personal_Cover.png" />
           </Link>
         </div>
       </div>
