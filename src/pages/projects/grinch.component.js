@@ -20,9 +20,7 @@ class Grinch extends Component {
         [PATH + "Grinch_05.png"],
         [PATH + "Grinch_06.png"],
         [PATH + "Grinch_07.png"],
-        [PATH + "Grinch_08.png"],
-        [PATH + "project_image_2000.png"],
-        [PATH + "project_image_1000.png"]
+        [PATH + "project_image_2000.png"]
       ]} />
     );
   };
