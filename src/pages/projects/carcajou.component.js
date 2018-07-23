@@ -15,15 +15,15 @@ class Carcajou extends Component {
     return (
       <Gallery imageRowUrls={[
         [PATH + "vincent_testimony.jpg"],
-        [PATH + "carcajou_01.png"],
-        [PATH + "carcajou_02.png"],
-        [PATH + "carcajou_03.png"],
-        [PATH + "carcajou_04.png"],
-        [PATH + "carcajou_05.png"],
-        [PATH + "carcajou_06.png"],
-        [PATH + "carcajou_07.png"],
-        [PATH + "carcajou_08.png"],
-        [PATH + "carcajou_09.png"]
+        [PATH + "Carcajou_00.png"],
+        [PATH + "Carcajou_01.png"],
+        [PATH + "Carcajou_02.png"],
+        [PATH + "Carcajou_03.png"],
+        [PATH + "Carcajou_04.png"],
+        [PATH + "Carcajou_05.png"],
+        [PATH + "Carcajou_06.png"],
+        [PATH + "Carcajou_07.png"],
+        [PATH + "Carcajou_08.png"]
       ]} />
     );
   };

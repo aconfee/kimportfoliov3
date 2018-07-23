@@ -13,14 +13,14 @@ class Grinch extends Component {
   render() {
     return (
       <Gallery imageRowUrls={[
+        [PATH + "Grinch_00.png"],
         [PATH + "Grinch_01.png"],
         [PATH + "Grinch_02.png"],
         [PATH + "Grinch_03.png"],
         [PATH + "Grinch_04.png"],
         [PATH + "Grinch_05.png"],
         [PATH + "Grinch_06.png"],
-        [PATH + "Grinch_07.png"],
-        [PATH + "project_image_2000.png"]
+        [PATH + "Grinch_07.png"]
       ]} />
     );
   };
