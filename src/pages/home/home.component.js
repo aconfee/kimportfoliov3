@@ -15,7 +15,6 @@ function Home() {
         [GRINCH_PATH + "Grinch_01.png"],
         [GRINCH_PATH + "Grinch_02.png"],
         [GRINCH_PATH + "Grinch_03.png"],
-        [GRINCH_PATH + "Grinch_04.png"],
         [GRINCH_PATH + "Grinch_05.png"],
         [GRINCH_PATH + "Grinch_06.png"],
         [GRINCH_PATH + "Grinch_07.png"],

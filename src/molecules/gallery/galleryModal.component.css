@@ -45,16 +45,6 @@ img {
 
 .modal-overlay
 .modal-content-container
-#modal-close-button {
-  position: absolute;
-  top: 50%;
-  right: 1%;
-
-  transform: translateY(-50%);
-}
-
-.modal-overlay
-.modal-content-container
 #modal-next-button {
   position: absolute;
   top: 50%;
@@ -73,6 +63,40 @@ img {
   transform: translateY(100px);
 }
 
+.modal-overlay
+#modal-close-button {
+  position: fixed;
+  right: 2%;
+  top: 1%;
+  width: 30px;
+  height: 30px;
+}
+
+.modal-overlay
+#modal-close-button:hover{
+  cursor: pointer;
+}
+
+.modal-overlay
+#modal-close-button 
+#x-line-one {
+  width: 30px;
+  border-top: 1px solid black;
+  transform: rotateZ(45deg);
+  position: absolute;
+  top: 10px;
+}
+
+.modal-overlay
+#modal-close-button 
+#x-line-two {
+  width: 30px;
+  border-top: 1px solid black;
+  transform: rotateZ(-45deg);
+  position: absolute;
+  top: 10px;
+}
+
 @media only screen and (min-width: 1000px) {
   .modal-overlay
   .modal-button {
@@ -82,15 +106,9 @@ img {
 
   .modal-overlay
   .modal-content-container
-  #modal-close-button {
-    left: 1%;
-  }
-
-  .modal-overlay
-  .modal-content-container
   #modal-next-button {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 1%;
 
     transform: translateY(-200px);
@@ -100,10 +118,31 @@ img {
   .modal-content-container
   #modal-previous-button {
     position: absolute;
-    bottom: 50%;
+    bottom: 55%;
     right: 1%;
 
     transform: translateY(200px);
+  }
+  .modal-overlay
+  #modal-close-button {
+    right: 2%;
+    top: 3%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal-overlay
+  #modal-close-button 
+  #x-line-one {
+    width: 50px;
+    top: 20px;
+  }
+
+  .modal-overlay
+  #modal-close-button 
+  #x-line-two {
+    width: 50px;
+    top: 20px;
   }
 }
 

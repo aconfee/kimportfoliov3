@@ -84,11 +84,12 @@ class GalleryModal extends Component {
 
     return (
       <div className="modal-overlay">
+        <div id="modal-close-button" onClick={ this.handleCloseClick }>
+          <div id="x-line-one" />
+          <div id="x-line-two" />
+        </div>
         <div className="modal-content-container">
           <img className={ this.state.animateClass } src={ imageUrls[activeIndex] } alt="Kim Greenough art." title="Kim Greenough art." />
-          <div id="modal-close-button" className="modal-button">
-            <ButtonRoundText text="CLOSE" onClick={ this.handleCloseClick }/>
-          </div>
           <div id="modal-next-button" className="modal-button">
             <ButtonRoundText text="NEXT" onClick={ this.handleNextClick }/>
           </div>
