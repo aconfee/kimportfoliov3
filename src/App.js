@@ -9,9 +9,6 @@ import Home from './pages/home/home.component.js';
 import Fun from './pages/fun/fun.component.js';
 import About from './pages/about/about.component.js';
 import Contact from './pages/contact/contact.component.js';
-import Fishbowls from './pages/projects/fishbowls.component.js';
-import Carcajou from './pages/projects/carcajou.component';
-import Grinch from './pages/projects/grinch.component';
 import StyleGuide from './pages/styleguide/styleguide.component.js';
 
 class App extends Component {
@@ -23,9 +20,6 @@ class App extends Component {
           <Route exact path="/" component={ Home } />
           {/* OBSOLETE: /projects is here for reverse-compatibility if recruiters still have this link. */}
           <Route exact path="/projects" component={ Home } />
-          {/* <Route exact path="/carcajou" component={ Carcajou } />
-          <Route exact path="/grinch" component={ Grinch } />
-          <Route exact path="/fishbowls" component={ Fishbowls } /> */}
           <Route path="/fun" component={ Fun } />
           <Route path="/about" component={ About } />
           <Route path="/contact" component={ Contact } />

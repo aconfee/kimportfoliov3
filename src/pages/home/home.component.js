@@ -5,6 +5,7 @@ import ContactForm from '../../organisms/forms/contactForm.component.js';
 
 const GRINCH_PATH = "./images/projects/grinch/";
 const CARCAJOU_PATH = "./images/projects/carcajou/";
+const FISHBOWLS_PATH = "./images/projects/fishbowls/";
 
 function Home() {
   return (
@@ -27,7 +28,9 @@ function Home() {
         [CARCAJOU_PATH + "carcajou_05.png"],
         [CARCAJOU_PATH + "carcajou_06.png"],
         [CARCAJOU_PATH + "carcajou_07.png"],
-        [CARCAJOU_PATH + "carcajou_08.png"]
+        [CARCAJOU_PATH + "carcajou_08.png"],
+        [FISHBOWLS_PATH + "Fishbowls_02.png"],
+        [FISHBOWLS_PATH + "Fishbowls_01.png"]
       ]} />
       <br />
       <br />
