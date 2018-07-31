@@ -1,40 +1,34 @@
 import React from 'react';
 import './home.component.css';
-import ResponsiveImage from '../../atoms/responsiveImage/responsiveImage.component.js';
-import { Link } from 'react-router-dom';
+import Gallery from '../../molecules/gallery/gallery.component';
 import ContactForm from '../../organisms/forms/contactForm.component.js';
+
+const GRINCH_PATH = "./images/projects/grinch/";
+const CARCAJOU_PATH = "./images/projects/carcajou/";
 
 function Home() {
   return (
     <div>
-      <div className="image-link-row">
-
-        <div className="image-left">
-          <Link to="/grinch">
-            <ResponsiveImage imageUrl="./images/Grinch_Cover.png" />
-          </Link>
-        </div>
-
-        <div className="image-right">
-          <Link to="/carcajou">
-            <ResponsiveImage imageUrl="./images/Carcajou_Cover.png" />
-          </Link>
-        </div>
-        
-      </div>
-      <br />
-      <div className="image-link-row">
-        <div className="image-left">
-          <Link to="/fishbowls">
-            <ResponsiveImage imageUrl="./images/Gobie_Cover.png" />
-          </Link>
-        </div>
-        <div className="image-right">
-          <Link to="/fun">
-            <ResponsiveImage imageUrl="./images/Personal_Cover.png" />
-          </Link>
-        </div>
-      </div>
+      <Gallery imageRowUrls={[
+        [GRINCH_PATH + "Grinch_00.png"],
+        [GRINCH_PATH + "Grinch_01.png"],
+        [GRINCH_PATH + "Grinch_02.png"],
+        [GRINCH_PATH + "Grinch_03.png"],
+        [GRINCH_PATH + "Grinch_04.png"],
+        [GRINCH_PATH + "Grinch_05.png"],
+        [GRINCH_PATH + "Grinch_06.png"],
+        [GRINCH_PATH + "Grinch_07.png"],
+        [CARCAJOU_PATH + "vincent_testimony.jpg"],
+        [CARCAJOU_PATH + "Carcajou_00.png"],
+        [CARCAJOU_PATH + "carcajou_01.png"],
+        [CARCAJOU_PATH + "carcajou_02.png"],
+        [CARCAJOU_PATH + "carcajou_03.png"],
+        [CARCAJOU_PATH + "carcajou_04.png"],
+        [CARCAJOU_PATH + "carcajou_05.png"],
+        [CARCAJOU_PATH + "carcajou_06.png"],
+        [CARCAJOU_PATH + "carcajou_07.png"],
+        [CARCAJOU_PATH + "carcajou_08.png"]
+      ]} />
       <br />
       <br />
       <br />

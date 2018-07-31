@@ -21,10 +21,11 @@ class App extends Component {
         <div className="page-content-container">
           <Header />
           <Route exact path="/" component={ Home } />
+          {/* OBSOLETE: /projects is here for reverse-compatibility if recruiters still have this link. */}
           <Route exact path="/projects" component={ Home } />
-          <Route exact path="/carcajou" component={ Carcajou } />
+          {/* <Route exact path="/carcajou" component={ Carcajou } />
           <Route exact path="/grinch" component={ Grinch } />
-          <Route exact path="/fishbowls" component={ Fishbowls } />
+          <Route exact path="/fishbowls" component={ Fishbowls } /> */}
           <Route path="/fun" component={ Fun } />
           <Route path="/about" component={ About } />
           <Route path="/contact" component={ Contact } />

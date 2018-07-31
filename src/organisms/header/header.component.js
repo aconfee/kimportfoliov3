@@ -45,13 +45,13 @@ class Header extends Component {
         </div>
 
         <div className="link-groups-container">
-          <span id="projects-link" onMouseEnter={ this.showProjectsDropdown } >{ Link({ url: "/", text: "PROJECTS"}) }</span>
+          <span id="projects-link">{ Link({ url: "/", text: "PORTFOLIO"}) }</span>
           { LinkGroup({ linkData: [
             { url: "/fun", text: "FUN!" }
           ]})}
           { TextDivider() }
           { LinkGroup({ linkData: [
-            { url: "https://medium.com/@kimgreenough", text: "BLOG" },
+            // { url: "https://medium.com/@kimgreenough", text: "BLOG" },
             { url: "/about", text: "ABOUT" },
             { url: "https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ", text: "RESUME" },
             { url: "/contact", text: "CONTACT" }
@@ -61,9 +61,9 @@ class Header extends Component {
 
         <div className="dropdown-menu-container">
           <DropdownMenu linkData={[
-            { url: "/", text: "PROJECTS" },
+            { url: "/", text: "PORTFOLIO" },
             { url: "/fun", text: "FUN!" },
-            { url: "https://medium.com/@kimgreenough", text: "BLOG" },
+            // { url: "https://medium.com/@kimgreenough", text: "BLOG" },
             { url: "/about", text: "ABOUT" },
             { url: "https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ", text: "RESUME" },
             { url: "/contact", text: "CONTACT" }
