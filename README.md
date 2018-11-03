@@ -8,8 +8,7 @@ npm run build
 node server.js
 
 deploy:
-git add and commit yada yada
-eb deploy
+Push to master branch. Build/deploy is in CircleCI. 
 
 
 erase this
