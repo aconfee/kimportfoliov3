@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Gallery from '../../molecules/gallery/gallery.component.js';
 
-const PATH = "./images/fun/";
+const PATH = "./images/galleries/fun/";
 
 class Fun extends Component {
 
