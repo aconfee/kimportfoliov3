@@ -3,7 +3,7 @@ import './home.component.css';
 import Gallery from '../../molecules/gallery/gallery.component';
 import ContactForm from '../../organisms/forms/contactForm.component.js';
 
-const GALLERY_PATH = "./images/galleries/portfolio/";
+const GALLERY_PATH = "./images/galleries/feature/";
 
 function Home() {
   return (
