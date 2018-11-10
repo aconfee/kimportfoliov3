@@ -11,14 +11,14 @@ function Home() {
       <Gallery imageRowUrls={[
         [GALLERY_PATH + "Peter_1.jpg", GALLERY_PATH + "Peter_2.jpg"],
         [GALLERY_PATH + "Peter_3.jpg", GALLERY_PATH + "Peter_4.jpg"],
-        [GALLERY_PATH + "000_grinch.png", GALLERY_PATH + "010_grinch.png"],
-        [GALLERY_PATH + "020_grinch.png", GALLERY_PATH + "030_grinch.png"],
-        [GALLERY_PATH + "040_grinch.png", GALLERY_PATH + "050_grinch.png"],
-        [GALLERY_PATH + "060_grinch.png", GALLERY_PATH + "070_carcajou.png"],
-        [GALLERY_PATH + "080_carcajou.png", GALLERY_PATH + "090_carcajou.png"],
-        [GALLERY_PATH + "100_carcajou.png", GALLERY_PATH + "110_carcajou.png"],
-        [GALLERY_PATH + "120_carcajou.png", GALLERY_PATH + "130_carcajou.png"],
-        [GALLERY_PATH + "140_carcajou.png"]
+        [GALLERY_PATH + "000_grinch.png"],
+        [GALLERY_PATH + "010_grinch.png", GALLERY_PATH + "020_grinch.png"],
+        [GALLERY_PATH + "030_grinch.png", GALLERY_PATH + "040_grinch.png"],
+        [GALLERY_PATH + "050_grinch.png", GALLERY_PATH + "060_grinch.png"],
+        [GALLERY_PATH + "070_carcajou.png", GALLERY_PATH + "080_carcajou.png"],
+        [GALLERY_PATH + "090_carcajou.png", GALLERY_PATH + "100_carcajou.png"],
+        [GALLERY_PATH + "110_carcajou.png", GALLERY_PATH + "120_carcajou.png"],
+        [GALLERY_PATH + "130_carcajou.png", GALLERY_PATH + "140_carcajou.png"]
       ]} />
       <br />
       <br />
