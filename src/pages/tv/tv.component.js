@@ -10,9 +10,11 @@ function Tv() {
     <div>
       <Gallery imageRowUrls={[
         [GALLERY_PATH + "DWP_00.png"],
-        [GALLERY_PATH + "DWP_01.png", GALLERY_PATH + "DWP_02.png"],
+        [GALLERY_PATH + "DWP_01.png", GALLERY_PATH + "DWP_01b.png"],
+        [GALLERY_PATH + "DWP_02.png", GALLERY_PATH + "DWP_02a.png"],
         [GALLERY_PATH + "DWP_03.png", GALLERY_PATH + "DWP_04.png"],
-        [GALLERY_PATH + "DWP_05.png", GALLERY_PATH + "DWP_06.png"],
+        [GALLERY_PATH + "DWP_04a.png", GALLERY_PATH + "DWP_05.png"],
+        [GALLERY_PATH + "DWP_06.png", GALLERY_PATH + "DWP_06a.png"],
         [GALLERY_PATH + "DWP_07.png", GALLERY_PATH + "DWP_08.png"],
         [GALLERY_PATH + "DWP_09.png"]
       ]} />
