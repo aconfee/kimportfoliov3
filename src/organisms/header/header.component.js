@@ -47,6 +47,7 @@ class Header extends Component {
         <div className="link-groups-container">
           <span id="projects-link">{ Link({ url: "/", text: "FEATURE"}) }</span>
           <span id="projects-link">{ Link({ url: "/tv", text: "TV"}) }</span>
+          <span id="projects-link">{ Link({ url: "/visdev", text: "VISDEV"}) }</span>
           { LinkGroup({ linkData: [
             { url: "/fun", text: "FUN!" }
           ]})}
@@ -64,6 +65,7 @@ class Header extends Component {
           <DropdownMenu linkData={[
             { url: "/", text: "FEATURE" },
             { url: "/tv", text: "TV" },
+            { url: "/visdev", text: "VISDEV" },
             { url: "/fun", text: "FUN!" },
             // { url: "https://medium.com/@kimgreenough", text: "BLOG" },
             { url: "/about", text: "ABOUT" },

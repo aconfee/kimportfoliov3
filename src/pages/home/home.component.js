@@ -9,17 +9,14 @@ function Home() {
   return (
     <div>
       <Gallery imageRowUrls={[
-        [GALLERY_PATH + "Peter_2.png"],
-        [GALLERY_PATH + "Peter_1.jpg", GALLERY_PATH + "Peter_3.jpg"],
-        [GALLERY_PATH + "Peter_4.jpg"],
-        [GALLERY_PATH + "000_grinch.png"],
-        [GALLERY_PATH + "010_grinch.png", GALLERY_PATH + "020_grinch.png"],
-        [GALLERY_PATH + "030_grinch.png", GALLERY_PATH + "040_grinch.png"],
-        [GALLERY_PATH + "050_grinch.png", GALLERY_PATH + "060_grinch.png"],
-        [GALLERY_PATH + "070_carcajou.png", GALLERY_PATH + "080_carcajou.png"],
-        [GALLERY_PATH + "090_carcajou.png", GALLERY_PATH + "100_carcajou.png"],
-        [GALLERY_PATH + "110_carcajou.png", GALLERY_PATH + "120_carcajou.png"],
-        [GALLERY_PATH + "130_carcajou.png", GALLERY_PATH + "140_carcajou.png"]
+        [GALLERY_PATH + "Feat_01.png", GALLERY_PATH + "Feat_02.png"],
+        [GALLERY_PATH + "Feat_03.png", GALLERY_PATH + "Feat_04.png"],
+        [GALLERY_PATH + "Feat_05.png", GALLERY_PATH + "Feat_06.png"],
+        [GALLERY_PATH + "Feat_07.png", GALLERY_PATH + "Feat_08.png"],
+        [GALLERY_PATH + "Feat_09.png", GALLERY_PATH + "Feat_10.png"],
+        [GALLERY_PATH + "Feat_11.png", GALLERY_PATH + "Feat_12.png"],
+        [GALLERY_PATH + "Feat_13.png", GALLERY_PATH + "Feat_14.png"],
+        [GALLERY_PATH + "Feat_15.png", GALLERY_PATH + "Feat_16.png"],
       ]} />
       <br />
       <br />

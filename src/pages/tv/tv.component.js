@@ -9,14 +9,13 @@ function Tv() {
   return (
     <div>
       <Gallery imageRowUrls={[
-        [GALLERY_PATH + "DWP_00.png"],
-        [GALLERY_PATH + "DWP_01.png", GALLERY_PATH + "DWP_02.png"],
-        [GALLERY_PATH + "DWP_03.png", GALLERY_PATH + "DWP_04.png"],
-        [GALLERY_PATH + "DWP_05.png", GALLERY_PATH + "DWP_06.png"],
-        [GALLERY_PATH + "DWP_07.png", GALLERY_PATH + "DWP_08.png"],
-        [GALLERY_PATH + "DWP_09.png", GALLERY_PATH + "DWP_10.png"],
-        [GALLERY_PATH + "DWP_11.png", GALLERY_PATH + "DWP_12.png"],
-        [GALLERY_PATH + "DWP_13.png", GALLERY_PATH + "DWP_14.png"]
+        [GALLERY_PATH + "TV_01.png", GALLERY_PATH + "TV_02.png"],
+        [GALLERY_PATH + "TV_03.png", GALLERY_PATH + "TV_04.png"],
+        [GALLERY_PATH + "TV_05.png", GALLERY_PATH + "TV_06.png"],
+        [GALLERY_PATH + "TV_07.png", GALLERY_PATH + "TV_08.png"],
+        [GALLERY_PATH + "TV_09.png", GALLERY_PATH + "TV_10.png"],
+        [GALLERY_PATH + "TV_11.png", GALLERY_PATH + "TV_12.png"],
+        [GALLERY_PATH + "TV_13.png"]
       ]} />
       <br />
       <br />
