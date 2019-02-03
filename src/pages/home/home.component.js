@@ -11,10 +11,11 @@ function Home() {
       <Gallery imageRowUrls={[
         [GALLERY_PATH + "Feat_01.jpg"],
         [GALLERY_PATH + "Feat_02.jpg", GALLERY_PATH + "Feat_03.jpg"],
-        [GALLERY_PATH + "Feat_04.png", GALLERY_PATH + "Feat_05.png"],
+        [GALLERY_PATH + "Feat_04.jpg", GALLERY_PATH + "Feat_05.jpg"],
         [GALLERY_PATH + "Feat_06.png", GALLERY_PATH + "Feat_07.png"],
         [GALLERY_PATH + "Feat_08.png", GALLERY_PATH + "Feat_09.png"],
-        [GALLERY_PATH + "Feat_10.png", GALLERY_PATH + "Feat_11.png"],
+        [GALLERY_PATH + "Feat_10.png"],
+        [GALLERY_PATH + "Feat_11.png", GALLERY_PATH + "Feat_12a.jpg"],
         [GALLERY_PATH + "Feat_12.png", GALLERY_PATH + "Feat_13.png"],
         [GALLERY_PATH + "Feat_14.png", GALLERY_PATH + "Feat_15.png"],
         [GALLERY_PATH + "Feat_16.png", GALLERY_PATH + "Feat_17.png"]
