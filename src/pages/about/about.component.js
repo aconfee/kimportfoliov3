@@ -12,10 +12,10 @@ function About() {
       </div>
         <div>
           <p className="about-description-header">Hello!</p>
-          <p className="about-font thin">Thanks for your interest! I&#39;m a recently matriculated artist and freelancer currently located in Austin, TX. I attended DigiPen Institute of Technology, and have pursued additional learning opportunities under the guidance of industry talent including Nathan Fawkes and Anthony Jones.</p>
+          <p className="about-font thin">Thanks for your interest! I&#39;m a freelancer character artist for feature and TV currently located in Glendale, CA. I attended DigiPen Institute of Technology, and pursued additional learning opportunities under the guidance of industry talent including Nathan Fawkes and Anthony Jones.</p>
           <br />
           <br />
-          <p className="about-font light">I&#39;m currently looking for full-time employment as a visual development artist in animation and games, and am willing to relocate.</p>
+          <p className="about-font light">I&#39;m currently looking for full-time employment as a character designer and visual development artist in feature and TV animation, and am willing to relocate.</p>
         </div>
       </div>
       <div className="testimony-container">
