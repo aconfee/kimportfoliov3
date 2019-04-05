@@ -10,7 +10,7 @@ function Resume() {
         <p style={{ fontSize: "25px", color: "#442c2e", marginTop: 0 }}>Click to connect on LinkedIn or view my full printable resume.</p>
         <div className="resume-button">
           <div className="text">
-            <a href="https://www.linkedin.com/in/kimgreenough/" target="_blank" className="resume">
+            <a href="https://www.linkedin.com/in/kimgreenough/" rel="noopener noreferrer" target="_blank" className="resume">
               LinkedIn
             </a>
           </div>
@@ -18,7 +18,7 @@ function Resume() {
         <div style={{ width: "25px", display: "inline-block" }}></div>
         <div className="resume-button">
           <div className="text">
-            <a href="https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ" target="_blank" className="resume">
+            <a href="https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ" rel="noopener noreferrer" target="_blank" className="resume">
               Resume
             </a>
           </div>
@@ -26,7 +26,7 @@ function Resume() {
       </div>
       <div style={{ marginTop: "50px" }}></div>
       <div className="work">
-        <div className="image"><img src={ GALLERY_PATH + "buffa_logo.png"} /></div>
+        <div className="image"><img src={ GALLERY_PATH + "buffa_logo.png"} alt="Buffa Pictures" /></div>
         <div style={{ margin: "17px", display: "inline-block" }}></div>
         <div className="bio">
           <div className="text-bold">Buffa Pictures</div>
@@ -37,7 +37,7 @@ function Resume() {
       </div>
       <div style={{ marginTop: "20px" }}></div>
       <div className="work">
-        <div className="image"><img src={ GALLERY_PATH + "carcajou_logo.png"} /></div>
+        <div className="image"><img src={ GALLERY_PATH + "carcajou_logo.png"} alt="Carcajou Games" /></div>
         <div style={{ margin: "17px", display: "inline-block" }}></div>
         <div className="bio">
           <div className="text-bold">Carcajou Games</div>
@@ -47,7 +47,7 @@ function Resume() {
         </div>
       </div>
       <div className="work">
-        <div className="image"><img src="" /></div>
+        <div className="image"><img src="" alt="Ongoing Freelance" /></div>
         <div style={{ margin: "17px", display: "inline-block" }}></div>
         <div className="bio">
           <div className="text-bold">Ongoing Freelance</div>
