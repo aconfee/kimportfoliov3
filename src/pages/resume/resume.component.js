@@ -8,21 +8,17 @@ function Resume() {
     <div className="resume">
       <div className="resume-header">
         <p style={{ fontSize: "25px", color: "#442c2e", marginTop: 0 }}>Click to connect on LinkedIn or view my full printable resume.</p>
-        <div className="resume-button">
-          <div className="text">
-            <a href="https://www.linkedin.com/in/kimgreenough/" rel="noopener noreferrer" target="_blank" className="resume">
-              LinkedIn
-            </a>
+        <a href="https://www.linkedin.com/in/kimgreenough/" rel="noopener noreferrer" target="_blank" className="resume">
+          <div className="resume-button">
+            <div className="text">LinkedIn</div>
           </div>
-        </div>
+        </a>
         <div style={{ width: "25px", display: "inline-block" }}></div>
-        <div className="resume-button">
-          <div className="text">
-            <a href="https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ" rel="noopener noreferrer" target="_blank" className="resume">
-              Resume
-            </a>
+        <a href="https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ" rel="noopener noreferrer" target="_blank" className="resume">
+          <div className="resume-button">
+            <div className="text">Resume</div>
           </div>
-        </div>
+        </a>
       </div>
       <div style={{ marginTop: "50px" }}></div>
       <div className="work">
@@ -47,7 +43,7 @@ function Resume() {
         </div>
       </div>
       <div className="work">
-        <div className="image"><img src="" alt="Ongoing Freelance" /></div>
+        <div className="image"></div>
         <div style={{ margin: "17px", display: "inline-block" }}></div>
         <div className="bio">
           <div className="text-bold">Ongoing Freelance</div>

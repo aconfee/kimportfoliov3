@@ -41,7 +41,7 @@ input:focus {
 input:disabled {
   background-color: white;
   border: 1px solid #f3f3f3;
-  color: #f3f3f3 !important;
+  color: #aeb0b1 !important;
   outline: none;
 
   -webkit-box-shadow: 0 0 0 1000px white inset !important;
