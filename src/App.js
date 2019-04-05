@@ -10,6 +10,7 @@ import Tv from './pages/tv/tv.component.js';
 import Vizdev from './pages/vizdev/vizdev.component.js';
 import Fun from './pages/fun/fun.component.js';
 import About from './pages/about/about.component.js';
+import Resume from './pages/resume/resume.component.js';
 import Contact from './pages/contact/contact.component.js';
 import StyleGuide from './pages/styleguide/styleguide.component.js';
 
@@ -26,6 +27,7 @@ class App extends Component {
           <Route exact path="/projects" component={ Home } />
           <Route path="/fun" component={ Fun } />
           <Route path="/about" component={ About } />
+          <Route path="/resume" component={ Resume } />
           <Route path="/contact" component={ Contact } />
           <Route path="/styleguide" component={ StyleGuide } />
         </div>

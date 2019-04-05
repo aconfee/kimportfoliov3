@@ -90,7 +90,7 @@ class ContactForm extends Component {
     return (
       <div className={ "submit-button" + classNames }>
         { this.state.isSending ? <HeartBox repeat={ true } /> : null }
-        { !this.state.isSending ? <input type="submit" value="&hearts;" /> : null }
+        { !this.state.isSending ? <input type="submit" style={{ color: "#442c2e" }} value="&hearts;" /> : null }
       </div>
     );
   };

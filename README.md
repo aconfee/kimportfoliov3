@@ -1,3 +1,5 @@
+Color design: https://material.io/design/color/applying-color-to-ui.html#backdrop
+
 Server functionality, sendimg messages and getting Instagram feed, is in AWS Lambda functions.
 
 local:

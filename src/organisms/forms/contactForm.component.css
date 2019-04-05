@@ -72,8 +72,8 @@ input[type=submit]:focus {
 
 .contact-form
 .submit-button {
-  color: white;
-  background-color: #ffd6f4;
+  color: #442c2e;
+  background-color: #fedbd0;
   font-size: 12px;
   right: 0;
   position: absolute;
@@ -89,18 +89,23 @@ input[type=submit]:focus {
   -webkit-align-items: center;
   align-items: center;
 
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-form
+.submit-button:hover {
+  background-color: #feeae6;
 }
 
 .contact-form
 .submit-button.sending {
-  color: white;
-  background-color: #f3f3f3;
+  color: #442c2e;
+  background-color: #feeae6;
 }
 
 .contact-form
 .submit-button.sent {
-  color: #ffd6f4;
-  background-color: #f3f3f3;
+  color: #442c2e;
+  background-color: #feeae6;
 }

@@ -55,7 +55,7 @@ class Header extends Component {
           { LinkGroup({ linkData: [
             // { url: "https://medium.com/@kimgreenough", text: "BLOG" },
             { url: "/about", text: "ABOUT" },
-            { url: "https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ", text: "RESUME" },
+            { url: "/resume", text: "RESUME" },
             { url: "/contact", text: "CONTACT" }
           ]})}
           { this.renderProjectsDropdown() }
@@ -69,7 +69,7 @@ class Header extends Component {
             { url: "/fun", text: "FUN!" },
             // { url: "https://medium.com/@kimgreenough", text: "BLOG" },
             { url: "/about", text: "ABOUT" },
-            { url: "https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ", text: "RESUME" },
+            { url: "/resume", text: "RESUME" },
             { url: "/contact", text: "CONTACT" }
           ]} />
         </div>

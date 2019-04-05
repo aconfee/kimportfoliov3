@@ -9,7 +9,7 @@ function Vizdev() {
   return (
     <div>
       <Gallery imageRowUrls={[
-        [GALLERY_PATH + "VisDev_01.png"]
+        [GALLERY_PATH + "VisDev_01.jpg"]
       ]} />
       <br />
       <br />
