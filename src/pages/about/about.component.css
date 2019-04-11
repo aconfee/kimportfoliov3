@@ -44,6 +44,7 @@ img {
 .testimony-portrait {
   min-width: 15%;
   min-height: 15%;
+  max-width: 50%;
   border-radius: 100%;
   margin-bottom: 50px;
 }

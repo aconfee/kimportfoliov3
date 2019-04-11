@@ -7,23 +7,20 @@ function Resume() {
   return (
     <div className="resume">
       <div className="resume-header">
-        <p style={{ fontSize: "25px", color: "#442c2e", marginTop: 0 }}>Click to connect on LinkedIn or view my full printable resume.</p>
+        <p className="connect-text">Click to connect on LinkedIn or view my full printable resume.</p>
         <a href="https://www.linkedin.com/in/kimgreenough/" rel="noopener noreferrer" target="_blank" className="resume">
           <div className="resume-button">
             <div className="text">LinkedIn</div>
           </div>
         </a>
-        <div style={{ width: "25px", display: "inline-block" }}></div>
         <a href="https://drive.google.com/open?id=14QvuWuKOymddhfrG0XpmmX043zKbaCGQ" rel="noopener noreferrer" target="_blank" className="resume">
           <div className="resume-button">
             <div className="text">Resume</div>
           </div>
         </a>
       </div>
-      <div style={{ marginTop: "50px" }}></div>
       <div className="work">
         <div className="image"><img src={ GALLERY_PATH + "buffa_logo.png"} alt="Buffa Pictures" /></div>
-        <div style={{ margin: "17px", display: "inline-block" }}></div>
         <div className="bio">
           <div className="text-bold">Buffa Pictures</div>
           <div>Untitled Project</div>
@@ -31,10 +28,8 @@ function Resume() {
           <div>Character Designer and Visual Development Artist</div>
         </div>
       </div>
-      <div style={{ marginTop: "20px" }}></div>
       <div className="work">
         <div className="image"><img src={ GALLERY_PATH + "carcajou_logo.png"} alt="Carcajou Games" /></div>
-        <div style={{ margin: "17px", display: "inline-block" }}></div>
         <div className="bio">
           <div className="text-bold">Carcajou Games</div>
           <div>Untitled Project</div>
@@ -44,7 +39,6 @@ function Resume() {
       </div>
       <div className="work">
         <div className="image"></div>
-        <div style={{ margin: "17px", display: "inline-block" }}></div>
         <div className="bio">
           <div className="text-bold">Ongoing Freelance</div>
           <div>Freelance character design and illustration.</div>
