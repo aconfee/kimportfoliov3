@@ -20,6 +20,15 @@ function Resume() {
         </a>
       </div>
       <div className="work">
+        <div className="image"><img src={ GALLERY_PATH + "lego_logo.jpg"} alt="Lego" /></div>
+        <div className="bio">
+          <div className="text-bold">Lego</div>
+          <div>Untitled Project</div>
+          <div>April 2019 - May 2019</div>
+          <div>Illustrator and Concept Artist</div>
+        </div>
+      </div>
+      <div className="work">
         <div className="image"><img src={ GALLERY_PATH + "buffa_logo.png"} alt="Buffa Pictures" /></div>
         <div className="bio">
           <div className="text-bold">Buffa Pictures</div>
