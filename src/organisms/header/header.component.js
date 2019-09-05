@@ -45,9 +45,8 @@ class Header extends Component {
         </div>
 
         <div className="link-groups-container">
-          <span id="projects-link">{ Link({ url: "/", text: "FEATURE"}) }</span>
-          <span id="projects-link">{ Link({ url: "/tv", text: "TV"}) }</span>
-          <span id="projects-link">{ Link({ url: "/visdev", text: "VISDEV"}) }</span>
+          <span id="projects-link">{ Link({ url: "/", text: "CHARACTER DESIGN"}) }</span>
+          <span id="projects-link">{ Link({ url: "/illustration", text: "ILLUSTRATION"}) }</span>
           { LinkGroup({ linkData: [
             { url: "/fun", text: "FUN!" }
           ]})}
@@ -63,9 +62,8 @@ class Header extends Component {
 
         <div className="dropdown-menu-container">
           <DropdownMenu linkData={[
-            { url: "/", text: "FEATURE" },
-            { url: "/tv", text: "TV" },
-            { url: "/visdev", text: "VISDEV" },
+            { url: "/", text: "CHARACTER DESIGN" },
+            { url: "/illustration", text: "ILLUSTRATION" },
             { url: "/fun", text: "FUN!" },
             // { url: "https://medium.com/@kimgreenough", text: "BLOG" },
             { url: "/about", text: "ABOUT" },

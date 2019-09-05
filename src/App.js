@@ -6,8 +6,7 @@ import Footer from './organisms/footer/footer.component.js';
 import { Route } from 'react-router-dom';
 
 import Home from './pages/home/home.component.js';
-import Tv from './pages/tv/tv.component.js';
-import Vizdev from './pages/vizdev/vizdev.component.js';
+import Illustration from './pages/illustration/illustration.component.js';
 import Fun from './pages/fun/fun.component.js';
 import About from './pages/about/about.component.js';
 import Resume from './pages/resume/resume.component.js';
@@ -21,8 +20,7 @@ class App extends Component {
         <div className="page-content-container">
           <Header />
           <Route exact path="/" component={ Home } />
-          <Route exact path="/tv" component={ Tv } />
-          <Route exact path="/visdev" component={ Vizdev } />
+          <Route exact path="/illustration" component={ Illustration } />
           {/* OBSOLETE: /projects is here for reverse-compatibility if recruiters still have this link. */}
           <Route exact path="/projects" component={ Home } />
           <Route path="/fun" component={ Fun } />

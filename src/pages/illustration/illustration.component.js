@@ -1,15 +1,18 @@
 import React from 'react';
-import './vizdev.component.css';
+import './illustration.component.css';
 import Gallery from '../../molecules/gallery/gallery.component';
 import ContactForm from '../../organisms/forms/contactForm.component.js';
 
-const GALLERY_PATH = "./images/galleries/vizdev/";
+const GALLERY_PATH = "./images/galleries/illustration/";
 
-function Vizdev() {
+function Illustration() {
   return (
     <div>
       <Gallery imageRowUrls={[
-        [GALLERY_PATH + "VisDev_01.jpg"]
+        [GALLERY_PATH + "01.jpg", GALLERY_PATH + "02.jpg"],
+        [GALLERY_PATH + "03.jpg", GALLERY_PATH + "04.png"],
+        [GALLERY_PATH + "05.jpg", GALLERY_PATH + "06.jpg"],
+        [GALLERY_PATH + "07.jpg", GALLERY_PATH + "08.jpg"]
       ]} />
       <br />
       <br />
@@ -24,4 +27,4 @@ function Vizdev() {
   );
 };
 
-export default Vizdev;
+export default Illustration;
