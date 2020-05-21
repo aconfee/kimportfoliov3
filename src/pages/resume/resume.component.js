@@ -20,7 +20,25 @@ function Resume() {
         </a>
       </div>
       <div className="work">
-        <div className="image"><img src={ GALLERY_PATH + "lego_logo.jpg"} alt="Lego" /></div>
+        <div className="image"><img src={GALLERY_PATH + "magnopus_logo.jpg"} alt="Magnoups" /></div>
+        <div className="bio">
+          <div className="text-bold">Magnopus</div>
+          <div>Untitled Project</div>
+          <div>October 2019 - May 2020</div>
+          <div>Character Concept Artist</div>
+        </div>
+      </div>
+      <div className="work">
+        <div className="image"><img src={GALLERY_PATH + "wb_logo.jpg"} alt="Warner Brothers" /></div>
+        <div className="bio">
+          <div className="text-bold">Warner Brothers</div>
+          <div>Untitled Project</div>
+          <div>April 2020</div>
+          <div>Character Designer</div>
+        </div>
+      </div>
+      <div className="work">
+        <div className="image"><img src={GALLERY_PATH + "lego_logo.jpg"} alt="Lego" /></div>
         <div className="bio">
           <div className="text-bold">Lego</div>
           <div>Untitled Project</div>
@@ -29,7 +47,7 @@ function Resume() {
         </div>
       </div>
       <div className="work">
-        <div className="image"><img src={ GALLERY_PATH + "buffa_logo.png"} alt="Buffa Pictures" /></div>
+        <div className="image"><img src={GALLERY_PATH + "buffa_logo.png"} alt="Buffa Pictures" /></div>
         <div className="bio">
           <div className="text-bold">Buffa Pictures</div>
           <div>Untitled Project</div>
@@ -38,7 +56,7 @@ function Resume() {
         </div>
       </div>
       <div className="work">
-        <div className="image"><img src={ GALLERY_PATH + "carcajou_logo.png"} alt="Carcajou Games" /></div>
+        <div className="image"><img src={GALLERY_PATH + "carcajou_logo.png"} alt="Carcajou Games" /></div>
         <div className="bio">
           <div className="text-bold">Carcajou Games</div>
           <div>Untitled Project</div>
